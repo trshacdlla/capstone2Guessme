@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guessme.guessme.Science.ScienceDifficulty"
+    android:orientation="vertical"
+    android:background="@drawable/bgdifficulty"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/beginners"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btnbeginner"/>
+
+    <Button
+        android:id="@+id/intermediates"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/lockinter" />
+
+    <Button
+        android:id="@+id/experts"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/lockexpert"/>
+</LinearLayout>

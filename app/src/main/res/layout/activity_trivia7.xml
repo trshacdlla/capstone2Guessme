@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guessme.guessme.Trivia.Trivia7"
+    android:background="@drawable/t7"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/trivia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="It is impossible for most people to lick their own elbow. (try it!)"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/Trivia7Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bborder"
+        android:textColor="#fff"
+        android:text="Back"/>
+
+</LinearLayout>

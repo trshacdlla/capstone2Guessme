@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guessme.guessme.Scores"
+    android:background="@drawable/statistics"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="English"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Englbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Math"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Mathbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Science"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Sciencebarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Technology"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Techbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/score_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Back"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

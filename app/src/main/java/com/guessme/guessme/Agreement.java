@@ -1,0 +1,145 @@
+package com.guessme.guessme;
+
+
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.guessme.guessme.Tech.Terms;
+
+public class Agreement extends AppCompatActivity {
+//    AlertDialog context = alert.create();
+    Context context = this;
+        public static MediaPlayer bgmusic;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_agreement);
+        bgmusic = MediaPlayer.create(Agreement.this, R.raw.bgmusic);
+        bgmusic.start();
+        bgmusic.setLooping(true);
+
+//        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        boolean agreed = sharedPreferences.getBoolean("agreed", false);
+//        if (!agreed) {
+//
+//
+//            new AlertDialog.Builder(context)
+//                    .setTitle("License agreement")
+//                    .setPositiveButton("AGREE", new DialogInterface.OnClickListener() {
+//
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            SharedPreferences.Editor editor = sharedPreferences.edit();
+//                            editor.putBoolean("agreed", true);
+//                            editor.commit();
+//                            startActivity(new Intent(Agreement.this, Name.class));
+//                        }
+//                    })  .setNegativeButton("DISAGREE", new DialogInterface.OnClickListener() {
+//
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    Agreement.bgmusic.stop();
+//                    finish();
+//                    System.exit(0);
+//                }
+//            })
+//                    .setMessage("The terms of this agreement (\\\"Terms of Use\\\") govern the relationship between you and GuessMe, regarding your use of GuessMe games, websites and related services (the \\\"Service\\\"), including all information, text, graphics, software, and services, available for your use. By using this application and the services offered on it, downloading any software, or browsing the website, as well as by downloading any of our mobile games from app stores, you accept the following Terms of Use. If you do NOT agree to all these Terms of Use, please do NOT use this website and/or download any of our games. \n" +
+//                            "GuessMe is authorized to amend the Terms of Use at any time, with the amended Terms of Use effective as soon as they are posted on this website. Please check the most current Terms of Use to ensure that you are aware of all the terms and conditions regulating your use of this website and our game.\n" +
+//                            "GuessMe reserves the right to make changes to or update the content of the website and its games or the format thereof at any time and without any notice.\n" +
+//                            "GuessMe reserves the right to terminate or restrict access to the website for any reason whatsoever at its sole discretion.\n" +
+//                            "WARRANTIES AND DISCLAIMERS\n" +
+//                            "ALL INFORMATION, SOFTWARE, AND SERVICES OFFERED ON THIS APPLICAITION ARE PROVIDED \\\"AS IS.\\\" GuessMe HEREBY EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.\n" +
+//                            "nGUESSME MAKES NO WARRANTY, REPRESENTATION, OR GUARANTY AS TO THE CONTENT, SEQUENCE, ACCURACY, TIMELINESS, OR COMPLETENESS OF ITS INFORMATION, SOFTWARE, OR SERVICES. PLAYRIX MAKES NO WARRANTY, REPRESENTATION, OR GUARANTY THAT THE INFORMATION, PRODUCTS, OR SERVICES WILL BE UNINTERRUPTED OR ERROR FREE OR THAT ANY DEFECTS WILL BE CORRECTED.\n" +
+//                            "PLAYRIX ASSUMES NO RESPONSIBILITY FOR ERRORS OR OMISSIONS IN THE INFORMATION, SOFTWARE, OR SERVICES REFERENCED OR LINKED TO ON THIS WEBSITE. \n" +
+//                            "IN NO CASE SHALL GUESSME BE HELD LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE, SPECIAL, OR INCIDENTAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, THOSE RESULTING FROM A LOSS OF BUSINESS, DATA, OR REVENUE; RELIANCE ON THE MATERIALS PRESENTED; DELAYS; OR BUSINESS INTERRUPTIONS ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF GUESSME INFORMATION) REGARDLESS OF WHETHER GUESSME HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. \n" +
+//                            "DOWNLOADING AND USING ANY OF THE SOFTWARE OR SERVICES OFFERED ON THE APPLICATION IS DONE AT YOUR OWN DISCRETION AND RISK AND YOU ARE SOLELY RESPONSIBLE FOR ALL DAMAGE TO YOUR DEVICE SYSTEM, LOSS OF DATA, OR OTHER HARM THAT RESULTS FROM SUCH ACTIVITIES.\n" +
+//                            "Copyright\n" +
+//                            "Copyrights, trademarks, and all other proprietary rights shown in the content (including, but not limited to, software, services, text, graphics, and logos) are reserved to GuessMe and protected by international copyright laws. You agree not to copy, republish, modify, download, distribute, license, sublicense, reverse engineer, or create derivatives based on the site, its software, or its services except as expressly authorized herein. Except as otherwise provided, the content published on this website and/or in the app stores may be reproduced or distributed in unmodified form for personal, non-commercial use only. Any other use of the content, including, without limitation, distribution, reproduction, modification, display, or transmission, without the prior written consent of GuessMe is strictly prohibited. All copyright and other proprietary notices shall be retained on all reproductions. \n" +
+//                            "GuessMe disclaims all proprietary interests in its intellectual property rights other than its own. References to third-party services and software are given by GuessMe \\\"AS IS,\\\" without warranty of any kind, either expressed or implied.\n" +
+//                            "How to find our contact information (for Google Play) \n" +
+//                            "1. Visit https://play.google.com/store. \n" +
+//                            "2. Browse or search for the Game. \n" +
+//                            "3. Locate and select the Game to open the detail page. \n" +
+//                            "4. Scroll down to the \\\"Additional information\\\" section. \n" +
+//                            "5. Review the contact information listed. \n" +
+//                            "If your inquiry is about a problem with a purchase you made, you should expect a response within three business days and within 24 hours to any support or product concerns stated to be urgent by Google.\n" +
+//                            "Rights to Content \n" +
+//                            "“Content” refers to all software (including without limitation all games, titles, and computer code), communications (including without limitation all stories, dialogues, concepts, documentation, and character profile information), images, sounds, audio-visual effects, accounts, Virtual Currency and Virtual Items, and material produced by GuessMe and/or received or made available while playing the Games or developed during the course of the Games. Content also includes all feedback, comments, or suggestions that GuessMe receives from you regarding the Games. Unless otherwise expressly stated in writing, you understand and agree that all Content is owned, controlled, and/or licensed by GuessMe. GuessMe reserves the right to use all Content for any purpose, including without limitation all commercial and/or promotional use, without restriction by or compensating you. All Content is copyrighted under the copyright laws of Republic of Ireland and/or similar laws of other jurisdictions, protecting it from unauthorized use. Playrix reserves all rights, including, without limitation, all intellectual property GuessMe and other proprietary rights to and relating to its Games. You are not permitted to copy, redistribute, publish, create any derivative work from, or otherwise exploit our Content or any part of our Content in violation of GuessMe and/or any other third party’s intellectual property rights. GuessMe, its logos, Game titles, and all related characters and elements are trademarks of GuessMe and may not be used without its prior written consent.\n" +
+//                            "If you are deemed to have retained any right to, title of, or interest in our Content or any part of our Content, you agree to and hereby assign solely and exclusively to GuessMe all of your rights to, titles of, and interests in such Content or any part of such Content without additional consideration and in perpetuity under all applicable laws. If, for any reason, such assignment is ineffective under applicable law, you hereby grant GuessMe the sole, exclusive, irrevocable, sublicensable, transferable, worldwide, royalty-free license to reproduce, modify, create any derivative work from, publish, distribute, sell, transfer, transmit, publicly display, use, and practice such Content or any part of such Content, and to incorporate the same in other works in any form, media, or technology now known or later developed. To the extent permitted by applicable laws, you hereby agree to waive all moral rights or rights of publicity or privacy you may have to such Content. \n" +
+//                            "At our discretion, GuessMe representatives or technology may monitor certain Content in the Games, though it cannot and makes no undertaking to monitor all Content. We may edit, refuse to post, or remove any Content posted in the Games or in any Games-related sources that is deemed objectionable or violates these Terms or the spirit of these Terms at our sole discretion and determination. If you encounter something you find objectionable and in violation of these Terms, you can bring it to our attention by contacting us. You understand and agree that we are not responsible or liable for any Content generated by users of the Games. This implies that users, not us, are entirely responsible for the completeness, accuracy, and/or usefulness of all the Content they upload, communicate, transmit, and/or otherwise make available via our Games and related services. \n" +
+//                            "You acknowledge and agree that GuessMe may use built-in tracking features to obtain information regarding your use of the Games in order to improve the services we provide, and agree that such information is deemed to be Content for all intents and purposes under these Terms. \n" +
+//                            "Information Provided by You \n" +
+//                            "The use of all materials and information sent through or in connection with this website and/or GuessMe software by you is subject to our Privacy Policy . \n" +
+//                            "Use of Software \n" +
+//                            "The software available for download on this website or in app stores, as well as available on social networks, and all its documentation are the copyrighted work of GuessMe. Use of that software is governed by the terms of the end-user license agreement that accompanies or is included in it. You are not able to use, download, or install any software without first agreeing to the terms of the end-user license agreement that accompanies or is included in it. \n" +
+//                            "You may not use, copy, republish, download, modify, distribute, license, sublicense, decompile, disassemble, create a derivative work based on, or reverse engineer the software or other products, services, or processes accessible through our website or Games except as expressly authorized herein or in the applicable end-user license agreement. You also acknowledge and agree that you will not transmit, upload, or attempt to transmit or upload viruses, adware, spyware, worms, or any other malicious or invasive code. \n" +
+//                            "The software is supplied \\\"AS IS.\\\" GuessMe disclaims all warranties, expressed or implied, including, but not limited to, warranties of merchantability and fitness for any purpose with respect to the software. You assume the entire risk of using the software. \n" +
+//                            "You understand that GuessMe introduction of various technologies may not be consistent across all platforms and that the performance and some features offered by us may vary depending on your device and other equipment. \n" +
+//                            "GuessMe grants you a non-exclusive, non-transferable, revocable, and limited license to use our software. You may not use GuessMe software for any purpose other than that described in the license granted to you. Any illegal use of our software is solely your responsibility. \n" +
+//                            "User Conduct \n" +
+//                            "You may be required to register an account (the “Account”) on the Service. Your use of the Service is governed by and maintained and enforced by GuessMe through “User Conduct.” You are entirely responsible for knowing, understanding, and abiding by User Conduct. The User Conduct rules are not exhaustive, and GuessMe reserves the right to determine which conduct is considered to be outside the spirit of the Games and to take disciplinary measures, including the termination and deletion of user accounts, prohibiting user from using the Service in whole or in part. User Conduct governs all aspects of your interaction with the Games, including, without limitation, selecting an in-game name, posting messages, interacting with other users, and otherwise accessing the Games. \n" +
+//                            "You acknowledge and agree that if GuessMe finds, at its sole discretion, that you have violated User Conduct, you may no longer have access to the violating item/items and/or GuessMe reserves the right to take actions, which may include terminating your account and prohibiting you from using the Service in whole or in part. \n" +
+//                            "You agree that you will not: \n" +
+//                            "• Transmit or post any content or use language deemed to be offensive at GuessMe sole discretion, including, without limitation, content or language that is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, hateful, sexually explicit, or racially, ethnically, or otherwise objectionable, nor may you misspell or use an alternative spelling to circumvent or attempt to circumvent the content and language restrictions listed above \n" +
+//                            "• Post and/or make available to the public any other user’s personal information in the Games and/or any game-related services without that user’s express written consent, though users may communicate their own personal information \n" +
+//                            "• Violate the contractual, personal, intellectual property, or other rights of any party, or promote or constitute illegal activity \n" +
+//                            "• Improperly use GuessMe support services, including without limitation submission of false reports of abuse or misconduct by any party \n" +
+//                            "• Disable, interfere with, or circumvent any security feature of the Games or any feature that restricts or enforces limitations on the use of or access to the Games or Content \n" +
+//                            "• Participate in any activities and/or perform any actions that, in GuessMe sole opinion, lead to, result in, or may result in an authorized user of the Games being defrauded of Virtual Currency or Virtual Items that user has earned through authorized gameplay and/or purchased in the Games \n" +
+//                            "• Sell GuessMe Games or any of their parts, including but not limited to Virtual Currency or Virtual Items, user accounts, and/or access to user accounts to any party in exchange for real currency or items and/or services of monetary value \n" +
+//                            "• Engage in cheating or any other fraudulent activity deemed by GuessMe to be in conflict with the spirit of the Games \n" +
+//                            "• Use or take part in the use of any unauthorized third-party software designed to modify or interfere with the Service and/or any GuessMe Games \n" +
+//                            "• Share your password or any credentials you may use to access your Account with anyone \n" +
+//                            "• Purchase, sell, rent, or give away your Account, or otherwise make available your Account to any third party; create an Account using a false identity or information, or on behalf of someone other than yourself \n" +
+//                            "• Use your Account for commercial purposes, including but not limited to advertising, or solicitation, or transmission of any commercial advertisements (junk or spam emails, chain letters, etc.) \n" +
+//                            "Termination \n" +
+//                            "We reserve the right to take actions, which may include terminating your account and prohibiting you from using the Service in whole or in part (including but not limited to by deleting your account) at any time, if we reasonably believe that you have violated or breached any of these terms. In the event that we suspend or terminate your account, you will have no further access to your account and/or any Content associated with it. As stated above, GuessMe and third-party e-commerce payment providers will not issue any refund to you for Virtual Currency or Virtual Items acquired, developed during, or purchased in the Games. \n" +
+//                            "Applicable Law \n" +
+//                            "These Terms of Use and all disputes relating to them shall be governed by and construed in accordance with the laws of Republic of Ireland. \n" +
+//                            "Severability \n" +
+//                            "You and GuessMe agree that if any part of these terms is or becomes, in whole or in part, invalid or unenforceable under any applicable local laws or court, it is to be deemed severed from these terms to the extent of its invalidity or unenforceability, and the rest of the terms shall remain in full force and effect. \n" +
+//                            "Supplemental Policies \n" +
+//                            "Additional policies related to specific services (including but not limited to forums, contests, or loyalty programs) can be issued by GuessMe. Your right to use such services is subject to the pertinent policies and these Terms of Use. \n" +
+//                            "YOU AGREE THAT YOUR USE OF THE INFORMATION, CONTENT, OR SERVICES ACKNOWLEDGES THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS. \n" +
+//                            "If you have any questions or comments, please contact us at support@ GuessMe.com..")
+//                    .show();
+//        }
+
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        if(!alertDialog.isShowing()){
+            //if its visibility is not showing then show here
+            Thread logoTimer = new Thread() {
+                public void run() {
+                    try {
+                        int logoTimer = 0;
+                        while (logoTimer < 7000) {
+                            sleep(100);
+                            logoTimer = logoTimer + 100;
+                        }
+                        ;
+                        startActivity(new Intent(Agreement.this, Summary.class));
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } finally {
+                        finish();
+                    }
+                }
+
+            };
+            logoTimer.start();
+
+        }
+
+    }
+    }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guessme.guessme.Difficulty"
+    android:orientation="vertical"
+    android:background="@drawable/bgdifficulty"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/qwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/beginner"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btnbeginner"/>
+
+    <Button
+        android:id="@+id/intermediate"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/lockinter" />
+
+    <Button
+        android:id="@+id/expert"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:background="@drawable/lockexpert"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="105dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/techbtn"
+        android:text="BACK" />
+</LinearLayout>

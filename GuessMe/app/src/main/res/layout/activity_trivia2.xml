@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guessme.guessme.Trivia.Trivia2"
+    android:background="@drawable/t2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/trivia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="A shrimp's heart is in its head"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/Trivia2Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/border"
+        android:textColor="#fff"
+        android:text="Back"/>
+
+</LinearLayout>
