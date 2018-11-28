@@ -62,7 +62,7 @@ public class Tech3 extends AppCompatActivity {
         ans1 = (Button) findViewById(R.id.t3ans1);
         ans2 = (Button) findViewById(R.id.t3ans2);
         ans3 = (Button) findViewById(R.id.t3ans3);
-
+        questionNumber = (TextView) findViewById(R.id.t3questionNumber);
         csounds =MediaPlayer.create(Tech3.this,R.raw.score);
 
         vibe = (Vibrator) getSystemService(getApplicationContext().VIBRATOR_SERVICE);
@@ -169,14 +169,14 @@ public class Tech3 extends AppCompatActivity {
         //Used to randomized the questions
         if (randomlist.isEmpty()){
             CountDownTimer.cancel();
-            Intent i = new Intent(getApplicationContext(),TechScore3.class);
+            Intent i = new Intent(getApplicationContext(), TechScore3.class);
             trials = getIntent().getIntExtra("Tech3tries",1);
             i.putExtra("Tech3tries", trials);
             i.putExtra("score",t3Score);
             startActivity(i);
             finish();
         }else{
-            questionNumber.setText(t3QuestionNum+1 +"/20");
+            questionNumber.setText(t3QuestionNum + 1 +"/20");
             Random generator = new Random();
             int number = generator.nextInt(randomlist.size());
             randomnum = randomlist.get(number);

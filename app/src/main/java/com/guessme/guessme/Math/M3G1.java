@@ -62,7 +62,7 @@ public class M3G1 extends AppCompatActivity {
 
         ans1 = (Button) findViewById(R.id.mb3ans1);
         ans2 = (Button) findViewById(R.id.mb3ans2);
-//        ans3 = (Button) findViewById(R.id.si3ans3);
+        ans3 = (Button) findViewById(R.id.mb3ans3);
 
         csounds =MediaPlayer.create(getApplicationContext(),R.raw.score);
 
@@ -141,26 +141,26 @@ public class M3G1 extends AppCompatActivity {
             }
         });
 
-        //When choice 1 is clicked
-//
-//        ans3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                restartTimer();
-//
-//                if (ans3.getText() == Answer) {
-//                    Score = Score + 1;
-//                    updateScore(Score);
-//                    csounds.start();
-//                    nextQuestion();
-//                }else{
-//                    nextQuestion();
-//                    Score = Score + 1;
-//                    vibe.vibrate(100);
-//                }
-//
-//            }
-//        });
+//        When choice 1 is clicked
+
+        ans3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                restartTimer();
+
+                if (ans3.getText() == Answer) {
+                    Score = Score + 1;
+                    updateScore(Score);
+                    csounds.start();
+                    nextQuestion();
+                }else{
+                    nextQuestion();
+                    Score = Score + 1;
+                    vibe.vibrate(100);
+                }
+
+            }
+        });
 
     }
 
@@ -191,7 +191,7 @@ public class M3G1 extends AppCompatActivity {
         questions.setText(Questions.getM3G1Questions(randomnum));
         ans1.setText(Questions.getM3G1Choice1(randomnum));
         ans2.setText(Questions.getM3G1Choice2(randomnum));
-//        ans3.setText(Questions.getS3G1Choice3(randomnum));
+        ans3.setText(Questions.getM3G1Choice3(randomnum));
 
         Answer = Questions.getM3G1Answer(randomnum);
         QuestionNum++;

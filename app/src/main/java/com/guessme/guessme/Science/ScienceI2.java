@@ -63,18 +63,17 @@ public class ScienceI2 extends AppCompatActivity {
         timer = (TextView) findViewById(R.id.si2Timer);
         score = (TextView) findViewById(R.id.si2score);
         questionNumber = (TextView) findViewById(R.id.si2questionNumber);
-
         ans1 = (Button) findViewById(R.id.si2ans1);
         ans2 = (Button) findViewById(R.id.si2ans2);
         ans3 = (Button) findViewById(R.id.si2ans3);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
-        questionNumber.setTypeface(custom_font);
-        timer.setTypeface(custom_font);
-        questions.setTypeface(custom_font);
-
-        ans1.setTypeface(custom_font);
-        ans2.setTypeface(custom_font);
-        ans3.setTypeface(custom_font);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
+//        questionNumber.setTypeface(custom_font);
+//        timer.setTypeface(custom_font);
+//        questions.setTypeface(custom_font);
+//
+//        ans1.setTypeface(custom_font);
+//        ans2.setTypeface(custom_font);
+//        ans3.setTypeface(custom_font);
 
         csounds =MediaPlayer.create(getApplicationContext(),R.raw.score);
 

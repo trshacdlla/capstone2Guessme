@@ -53,7 +53,7 @@ public class ScienceDifficulty extends AppCompatActivity {
         Beginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                i = new Intent(getApplicationContext(), ScienceI3.class);
+                i = new Intent(getApplicationContext(), ScienceB1.class);
                 startActivity(i);
 
 

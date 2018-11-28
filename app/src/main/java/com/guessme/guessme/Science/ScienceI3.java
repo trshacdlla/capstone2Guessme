@@ -152,9 +152,9 @@ public class ScienceI3 extends AppCompatActivity {
 
             }
         });
-
-//        When choice 1 is clicked
-
+//
+////        When choice 1 is clicked
+//
         ans3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,7 +203,7 @@ public class ScienceI3 extends AppCompatActivity {
         questions.setText(Questions.getS3G2P1Questions(randomnum));
         ans1.setText(Questions.getS3G2P1Choice1(randomnum));
         ans2.setText(Questions.getS3G2P1Choice2(randomnum));
-        ans3.setText(Questions.getS3G1P1Choice3(randomnum));
+        ans3.setText(Questions.getS3G2P1Choice3(randomnum));
 
         if (ans3.getText().toString().equals(" ")){
             ans3.setVisibility(View.INVISIBLE);

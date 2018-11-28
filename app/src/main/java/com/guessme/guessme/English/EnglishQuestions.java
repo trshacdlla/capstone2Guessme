@@ -416,7 +416,7 @@ public class EnglishQuestions {
 
             {"The pizza we ate yes terday was delicious","Pizza", "Ate", "Delicious","Delicious"}, //34
 
-            {"Is that your messy paper on the floor?"," Messy", "Paper", "Floor"," Messy "}, //35
+            {"Is that your messy paper on the floor?"," Messy ", "Paper", "Floor"," Messy "}, //35
 
             {" The airplane made a loud noise as it took off "," Airplane ", " loud ", " noise "," loud "}, //36
 
@@ -614,17 +614,18 @@ public class EnglishQuestions {
 
             {"Babies", "Babe", "Baby", " sun ", "Baby"}, //44
 
-            {"Churches", "Church ", "Churches", " treat ", "Church"}, //45
+            {"Churches", "Church", "Churches", " treat ", "Church"}, //45
 
             {"Places", "Placed", "Place", " Sand castle ", "Place"}, //46
 
             {"Wheels", "Heroes", "Hero", " Cake ","Wheel"}, //47
 
-            {"Heroes"," Barney ", " Notebook ", " Picked "," Picked "}, //48
+            {"Heroes"," Barney ", " Hero ", " Picked "," Hero "}, //48
 
             {"Apples", "Apple", "Applle", " fish ", "Apple"}, //49
 
             {"Cars", "carses", "Car", " won ", "Car"}, //50
+
             {"Tomatoes", "Tomato", "Tomatoses", " won ", "Tomato"}, //50
 
              {"Buses", "Bushes", "Bus", " won ", "Bus"}, //50
@@ -651,7 +652,7 @@ public class EnglishQuestions {
     }
 
     public String getEI3Answer(int a){
-        String answer = EnglishI4questions[a][4];
+        String answer = EnglishI3questions[a][4];
         return answer;
     };
 
@@ -661,9 +662,10 @@ public class EnglishQuestions {
             {"Clo_ds", "U", "I", "A","U"}, //32
 
             {"Th_nd_r", "I, E ", "U, E", "A, E", "U, E"}, //33
-
+            {"HA_", "E", "T", "I","T"}, //31
             {"Clo_ns", "W", "N", "U", "W"}, //34
-
+            {"R_D", "E", "A", "I","E"}, //31
+            {"0R_NGE", "E", "A", "I","A"}, //31
             {"Te_cher", "U", "A", "E", "A"}, //35
 
             {"_ipe", "P", "V", "S", "P"}, //36
@@ -673,6 +675,8 @@ public class EnglishQuestions {
             {"R_spe_tful","E, S", "E, C", "E, Z", "E, C"}, //38
 
             {"Cl_msy", "U", "A", "E", "U"}, //39
+
+            {"D_MP", "U", "A", "E", "U"}, //39
 
             {" The children were happy when it was time for recess "," Children ", " Happy ", " Recess "," Happy "}, //40
 
@@ -696,6 +700,11 @@ public class EnglishQuestions {
 
             {" Our volleyball team won the game "," Volleyball ", " team ", " won "," won "}, //50
 
+            {" The baker cut the cake into six pieces "," Baker ", " Cut ", " Cake "," Cut "}, //47
+//
+             {" Barney picked a purple notebook "," Barney ", " Notebook ", " Picked "," Picked "}, //48
+
+    {" I like to catch fish for dinner ","I", " catch ", " fish "," catch "}, //49
 
 
 
@@ -765,8 +774,22 @@ public class EnglishQuestions {
 
             {" Our volleyball team won the game "," Volleyball ", " team ", " won "," won "}, //50
 
+            {" My dog sat still while waiting for a treat "," Dog ", " Waiting ", " treat "," Waiting "}, //45
 
+            {"The pizza we ate yesterday was delicious","Pizza", "Ate", "Delicious","Delicious"}, //34
+//
+            {"Is that your messy paper on the floor?"," Messy", "Paper", "Floor"," Messy "}, //35
 
+            {" The airplane made a loud noise as it took off "," Airplane ", " loud ", " noise "," loud "}, //36
+            {" The baker cut the cake into six pieces "," Baker ", " Cut ", " Cake "," Cut "}, //47
+//
+            {" Barney picked a purple notebook "," Barney ", " Notebook ", " Picked "," Picked "}, //48
+
+            {" I like to catch fish for dinner ","I", " catch ", " fish "," catch "}, //49
+
+            {" We can feel the hot sun on our backs. "," we ", " feel ", " sun "," feel "}, //44
+
+            {" My dog sat still while waiting for a treat "," Dog ", " Waiting ", " treat "," Waiting "}, //45
 
     };
     public String getEI5question(int a){

@@ -38,17 +38,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_weight="1"
-            android:text="Level 1"
-            android:textAlignment="center"
-            android:textColor="#000"
-            android:textSize="35sp"
-            android:visibility="invisible" />
-
-        <TextView
             android:id="@+id/mb2score"
             android:layout_width="41dp"
             android:layout_height="wrap_content"

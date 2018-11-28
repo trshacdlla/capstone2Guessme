@@ -62,7 +62,8 @@ public class ScienceI5 extends AppCompatActivity {
         questions = (TextView) findViewById(R.id.si5question);
         timer = (TextView) findViewById(R.id.si5Timer);
         score = (TextView) findViewById(R.id.si5score);
-        questionNumber = (TextView) findViewById(R.id.si5questionNumber);    Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
+        questionNumber = (TextView) findViewById(R.id.si5questionNumber);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
 //        questionNumber.setTypeface(custom_font);
 //        timer.setTypeface(custom_font);
 //        questions.setTypeface(custom_font);
@@ -154,8 +155,8 @@ public class ScienceI5 extends AppCompatActivity {
             }
         });
 
-        //When choice 1 is clicked
-
+//        //When choice 1 is clicked
+//
         ans3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -205,11 +206,7 @@ public class ScienceI5 extends AppCompatActivity {
         ans1.setText(Questions.getS5G2P1Choice1(randomnum));
         ans2.setText(Questions.getS5G2P1Choice2(randomnum));
         ans3.setText(Questions.getS5G2P1Choice3(randomnum));
-        if (ans3.getText().toString().equals(" ")){
-            ans3.setVisibility(View.INVISIBLE);
-        }else{
 
-        }
         Answer = Questions.getS5G2P1Answer(randomnum);
         QuestionNum++;
 
@@ -229,29 +226,22 @@ public class ScienceI5 extends AppCompatActivity {
     }
 
     public void dialog(){
-        String ins = "Choose the best answer for the following questions.";
-        dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.instruction);
-        dialog.show();
-        dialog.setCancelable(false);
-//        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
-//
-//        TextView tv_title = (TextView) dialog.findViewById(R.id.title);
-        TextView tv_message = (TextView) dialog .findViewById(R.id.instruc);
-//        tv_message.setTypeface(custom_font);
-//        tv_title.setTypeface(custom_font);
-        tv_message.setText(ins);
+        final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceI5.this);
 
-        Button bt_yes = (Button)dialog.findViewById(R.id.ok);
+        alertDialog.setTitle("Direction:");
+        alertDialog.setMessage("Choose the correct answer");
+        alertDialog.setCancelable(false);
+        // Setting Dialog Message
 
-        bt_yes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        // Setting Positive "Yes" Button
+        alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                // Write your code here to invoke YES event
                 startTimer();
-                dialog.cancel();
             }
         });
+
+        alertDialog.show();
     }
 
 

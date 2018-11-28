@@ -60,11 +60,11 @@ public class EnglishI3 extends AppCompatActivity {
         questions = (TextView) findViewById(R.id.ei3question);
         timer = (TextView) findViewById(R.id.ei3Timer);
         score = (TextView) findViewById(R.id.ei3score);
-        questionNumber = (TextView) findViewById(R.id.ei2questionNumber);
+        questionNumber = (TextView) findViewById(R.id.ei3questionNumber);
 
         ans1 = (Button) findViewById(R.id.ei3ans1);
         ans2 = (Button) findViewById(R.id.ei3ans2);
-//        ans3 = (Button) findViewById(R.id.ei2ans3);
+        ans3 = (Button) findViewById(R.id.ei3ans3);
 
         csounds = MediaPlayer.create(EnglishI3.this, R.raw.score);
 
@@ -197,6 +197,7 @@ public class EnglishI3 extends AppCompatActivity {
         ans3.setText(EI3question.getEI3Choice3(randomnum));
 
         ei3Answer = EI3question.getEI3Answer(randomnum);
+
         ei3QuestionNum++;
 
     }

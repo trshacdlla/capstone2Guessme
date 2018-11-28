@@ -8,6 +8,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -172,7 +173,12 @@
         <activity android:name=".English.EnglishIScore3" />
         <activity android:name=".English.EnglishIScore4" />
         <activity android:name=".English.EnglishIScore5" />
-        <activity android:name=".Summary"></activity>
+        <activity android:name=".Summary" />
+        <activity android:name=".English.EnglishI1Statistics" />
+        <activity android:name=".English.EnglishI2Statistics" />
+        <activity android:name=".English.EnglishI3Statistics" />
+        <activity android:name=".English.EnglishI4Statistics" />
+        <activity android:name=".English.EnglishI5Statistics"></activity>
     </application>
 
 </manifest>

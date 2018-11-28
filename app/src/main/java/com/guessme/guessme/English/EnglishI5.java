@@ -64,7 +64,7 @@ public class EnglishI5 extends AppCompatActivity {
 
         ans1 = (Button) findViewById(R.id.ei5ans1);
         ans2 = (Button) findViewById(R.id.ei5ans2);
-//        ans3 = (Button) findViewById(R.id.ei2ans3);
+        ans3 = (Button) findViewById(R.id.ei5ans3);
 
         csounds = MediaPlayer.create(EnglishI5.this, R.raw.score);
 

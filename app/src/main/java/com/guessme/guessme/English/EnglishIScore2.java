@@ -60,7 +60,7 @@ public class EnglishIScore2 extends AppCompatActivity {
         right = (TextView) findViewById(R.id.ETI2correct);
         wrong = (TextView) findViewById(R.id.ETI2mistake);
         numtry = (TextView) findViewById(R.id.ETI2try);
-        trials = getIntent().getIntExtra("Engli1tries",1);
+        trials = getIntent().getIntExtra("Engli2tries",1);
         numtry.setText(String.valueOf(trials));
 
 
@@ -200,7 +200,7 @@ public class EnglishIScore2 extends AppCompatActivity {
         stat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),EnglishStatistics1.class);
+                Intent i = new Intent(getApplicationContext(),EnglishI2Statistics.class);
                 i.putExtra("score",correct);
                 i.putExtra("Engli1tries", trials);
                 i.putExtra("congratss", 1);
@@ -217,7 +217,7 @@ public class EnglishIScore2 extends AppCompatActivity {
         String myScore = right.getText().toString();
         SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         SharedPreferences.Editor mEditor = mPref.edit();
-        mEditor.putString("EnglI1Score", myScore);
+        mEditor.putString("EnglI2Score", myScore);
         mEditor.commit();
     }
 

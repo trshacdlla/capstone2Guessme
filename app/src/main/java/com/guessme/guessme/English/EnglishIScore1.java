@@ -201,7 +201,7 @@ public class EnglishIScore1 extends AppCompatActivity {
         stat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),EnglishStatistics1.class);
+                Intent i = new Intent(getApplicationContext(),EnglishI1Statistics.class);
                 i.putExtra("score",correct);
                 i.putExtra("Engli1tries", trials);
                 i.putExtra("congratss", 1);

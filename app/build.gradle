@@ -11,6 +11,19 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+//    splits{
+//        abi {
+//            enable true
+//            reset()
+//            include 'armeabi', 'armeabi-v7a'
+//            universalApk true
+//        }
+//    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
     buildTypes {
         release {
             minifyEnabled false

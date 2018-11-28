@@ -64,7 +64,7 @@ public class EnglishI4 extends AppCompatActivity {
 
         ans1 = (Button) findViewById(R.id.ei4ans1);
         ans2 = (Button) findViewById(R.id.ei4ans2);
-//        ans3 = (Button) findViewById(R.id.ei2ans3);
+        ans3 = (Button) findViewById(R.id.ei4ans3);
 
         csounds = MediaPlayer.create(EnglishI4.this, R.raw.score);
 
@@ -196,7 +196,7 @@ public class EnglishI4 extends AppCompatActivity {
         ans2.setText(EI4question.getEI4Choice2(randomnum));
         ans3.setText(EI4question.getEI4Choice3(randomnum));
 
-        ei4Answer = EI4question.getEI1Answer(randomnum);
+        ei4Answer = EI4question.getEI4Answer(randomnum);
         ei4QuestionNum++;
 
     }

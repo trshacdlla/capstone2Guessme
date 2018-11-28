@@ -887,7 +887,7 @@ public class ScienceQuestions {
         String choice2 = S3G2P1Questions[a][2];
         return choice2;
     }
-    public String getS3G1P1Choice3(int a){
+    public String getS3G2P1Choice3(int a){
       String choice3 = S3G2P1Questions[a][3];
         return choice3;
     }
@@ -976,55 +976,55 @@ public class ScienceQuestions {
 
 
     private String S4G2Questions [][]= {
-            {" Plants can only reproduce asexually ","True", " False", " False"}, //1
+            {" Plants can only reproduce asexually ","True", "False", "False"}, //1
 
-            {" Tall and green pine trees reproduce through seeds","True", " False", "True"},//2
+            {" Tall and green pine trees reproduce through seeds","True", "False", "True"},//2
 
             {" Non flowering plants like ferns and moss plants reproduce from spores ","True", " False", "True"},//3
 
-            {" A flower is pollinated when a grain of pollen falls on the stigma ","True", " False", "True"},//4
+            {" A flower is pollinated when a grain of pollen falls on the stigma ","True", "False", "True"},//4
 
-            {" The stamens are the male reproductive parts of the flower "," True", " False", " True"},//5
+            {" The stamens are the male reproductive parts of the flower ", "True", "False", "True"},//5
 
-            {" Nectar, a sugar rich food is located deep inside the flower "," True", " False", " True"},//6
+            {" Nectar, a sugar rich food is located deep inside the flower ", "True", "False", "True"},//6
 
-            {" If the pollen falls on the stigm of a similar plant, fertilization may not occur "," True", " False", " False"}, //7
+            {" If the pollen falls on the stigm of a similar plant, fertilization may not occur ","True", "False", "False"}, //7
 
-            {" Plants both flowering and non flowering reproduce through fertilization or sexual fertilization "," True", " False", " True"}, //8
+            {" Plants both flowering and non flowering reproduce through fertilization or sexual fertilization ","True", "False", "True"}, //8
 
-            {" Pistils, stamen, petals, and sepals are considered parts of the flower "," True", " False", " True"}, //9
+            {" Pistils, stamen, petals, and sepals are considered parts of the flower ","True", "False", "True"}, //9
 
-            {" Non flowering plants such as moss and ferns grow from their seeds "," True", " False", " False"},//10
+            {" Non flowering plants such as moss and ferns grow from their seeds ","True", "False", "False"},//10
 
-            {" Plant life cycles can be divided into two parts"," True", " False", " True"},//11
+            {" Plant life cycles can be divided into two parts","True", "False", "True"},//11
 
-            {" It is believed that brown algae are the early ancestors of plants "," True", " False", " False"},//12
+            {" It is believed that brown algae are the early ancestors of plants ","True", "False", "False"},//12
 
-            {" More than 260,000 plants species "," True", " False", " True"},//13
+            {" More than 260,000 plants species ","True", "False", "True"},//13
 
-            {" Vascular plants depends on diffusion and osmosic to obtain and move nutrients and water around the plant "," True", " False", " True"}, //14
+            {" Vascular plants depends on diffusion and osmosic to obtain and move nutrients and water around the plant ","True", "False", "True"}, //14
 
             {" Because the lack of vessels non vascular plants are small in size"," True", " False", " True"},//15
 
-            {" Vascular plants can be almost any size because the vessels can transport materials around the plant "," True", " False", " True"},//16
+            {" Vascular plants can be almost any size because the vessels can transport materials around the plant ","True", "False", "True"},//16
 
-            {" Plans without seeds are divided into two groups"," True", " False", " False"},//17
+            {" Plans without seeds are divided into two groups","True", "False", "False"},//17
 
-            {" Mosses and liverworts don’t have a true roots, stems, or leaves but they do have similar structure to carry out some activities "," True", " False", " True"}, //18
+            {" Mosses and liverworts don’t have a true roots, stems, or leaves but they do have similar structure to carry out some activities ","True", "False", "True"}, //18
 
-            {" Liverworts and mosses are usually the last organism to inhabit a new environment, "," True", " False", " False"},//19
+            {" Liverworts and mosses are usually the last organism to inhabit a new environment, ","True", "False", "False"},//19
 
-            {" Since ferns, horsetails, and club mosses are nonvascular, some of the early species were quite tall"," True", " False", " False"}, //20
+            {" Since ferns, horsetails, and club mosses are nonvascular, some of the early species were quite tall","True", "False", "False"}, //20
 
-            {" Seedless plants produce seeds, structure that protects and nourish young sporophytes "," True", " False", " True"}, //21
+            {" Seedless plants produce seeds, structure that protects and nourish young sporophytes ","True", "False", "True"}, //21
 
-            {" The female gamete of seeds plants do not need water to travel to the female gametes, they develop inside tiny structures that can be transported by wind or animals "," True", " False", " False"},//22
+            {" The female gamete of seeds plants do not need water to travel to the female gametes, they develop inside tiny structures that can be transported by wind or animals ","True", "False", "False"},//22
 
-            {" Gymnosperms are divided into two classes"," True", " False", " False"}, //23
+            {" Gymnosperms are divided into two classes","True", "False", "False"}, //23
 
-            {" There are two types of roots "," True", " False", " True"}, //24
+            {" There are two types of roots ","True", "False", "True"}, //24
 
-            {" The main function of the roots is to get food for the plant "," True", " False", " False"}, //25
+            {" The main function of the roots is to get food for the plant ","True", "False", "False"}, //25
 
     };
 
@@ -1044,11 +1044,15 @@ public class ScienceQuestions {
 //        String choice3 = S4G2Questions[a][3];
 //        return choice3;
 //    }
-    public String getS4G2Answer(int a){
+//    public String getS4G2Answer(int a){
+//        String answer = S4G2Questions[a][3];
+//        return answer;
+//    }
+
+        public  String getS4G2Answer (int a){
         String answer = S4G2Questions[a][3];
         return answer;
-    }
-
+        }
     private String S5G2P1Questions [][]= {
             {" The moon revolves around the earth ", " True", " False"," "," True"}, //1
 

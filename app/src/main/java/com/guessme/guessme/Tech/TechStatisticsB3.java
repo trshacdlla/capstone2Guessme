@@ -46,7 +46,7 @@ public class TechStatisticsB3 extends AppCompatActivity {
         back=(Button) findViewById(R.id.TTB3back);
         congratss = getIntent().getIntExtra("congratss",0);
         SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(TechStatisticsB3.this);
-        level1 = mPref.getString("TechB2Score", " ");
+        level1 = mPref.getString("TechB1Score", " ");
         level2 = mPref.getString("TechB2Score", " ");
         level3 = mPref.getString("TechB3Score", " ");
         slevel1 = Integer.parseInt(level1.toString());
@@ -90,7 +90,7 @@ public class TechStatisticsB3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), TechScoreB3.class);
-                i.putExtra("score",slevel1);
+                i.putExtra("score",slevel3);
                 int trials = getIntent().getIntExtra("tries", 1);
                 i.putExtra("tries", trials);
                 i.putExtra("congratss", 1);

@@ -646,7 +646,7 @@ public class TechQuestions {
 
     private String T3G1Questions [][]= {
             {" Do not use the computer during a storm. "," True ", " False ", " True "}, //1
-            {" Spay you computer with household cleanser to keep it clean. "," True ", " False ", " False "}, //2
+            {" Spray you computer with household cleanser to keep it clean. "," True ", " False ", " False "}, //2
 
             {" Spilling liquids on your computer won't hurt it.	 "," True ", " False ", " False "}, //3
             {" Keeping your computer dust-free can help it last longer. "," True ", " False ", " True "}, //4
@@ -734,7 +734,7 @@ public class TechQuestions {
 
             {"CO_TR_ _", " N-O-L "," B-O-L ", " H-O-P "," N-O-L "}, //15
 
-            {" E_D "," N","D", "T","N"}, //16
+            {" E_D ","N","D", "T","N"}, //16
 
             {" C_PS L_ _K "," A-O-C "," A-U-L", " A-O-L "," A-O-C "}, //17
 

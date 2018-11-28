@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.guessme.guessme.Science.ScienceI2"
     android:weightSum="1"
-    android:background="@drawable/s2">
+    android:background="@drawable/scil2">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,69 +26,84 @@
             android:textAlignment="textEnd"
             android:visibility="invisible" />
 
-        <TextView
-            android:id="@+id/si2score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0"
-            android:visibility="invisible" />
 
     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Level 1"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="35sp"
-        android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/si2questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="39dp"
+            android:text="         1"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:text="Level 1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/si2score"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="47dp"
+            android:layout_weight="1"
+            android:text="  0"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/si2Timer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
+        android:layout_height="54dp"
         android:layout_marginTop="20dp"
+        android:text="0"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="50sp"
-        />
+        android:textSize="50sp" />
 
     <LinearLayout
         android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/si2questionNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:text="1. "
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
+        android:layout_height="114dp"
+        android:layout_gravity="center"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/si2question"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_width="223dp"
+            android:layout_height="99dp"
             android:text="Questions"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textStyle="bold"
+            android:textSize="20sp"
 
-            android:textSize="20sp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/si2ans1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
@@ -99,24 +114,23 @@
     <Button
         android:id="@+id/si2ans2"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="57dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
+        android:background="@drawable/mathbutton"
         android:text="B. "
-        android:textSize="18sp"
-        android:background="@drawable/mathbutton"/>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/si2ans3"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="5dp"
-        android:text="C. "
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:background="@drawable/mathbutton"/>
+        android:background="@drawable/mathbutton"
+        android:text="B. "
+        android:textSize="18sp" />
 
 </LinearLayout>

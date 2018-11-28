@@ -196,7 +196,7 @@ public class TechScoreB4 extends AppCompatActivity {
         stat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),TechStatisticsB4.class);
+                Intent i = new Intent(getApplicationContext(), TechStatisticsB4.class);
                 i.putExtra("score",correct);
                 i.putExtra("tries", trials);
                 i.putExtra("congratss", 1);

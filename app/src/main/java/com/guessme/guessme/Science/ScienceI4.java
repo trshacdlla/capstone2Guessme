@@ -66,7 +66,7 @@ public class ScienceI4 extends AppCompatActivity {
 
         ans1 = (Button) findViewById(R.id.si4ans1);
         ans2 = (Button) findViewById(R.id.si4ans2);
-
+//        ans2 = (Button) findViewById(R.id.si4ans3);
 
 //        ans3 = (Button) findViewById(R.id.si4ans3);
 //        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
@@ -207,7 +207,7 @@ public class ScienceI4 extends AppCompatActivity {
         ans2.setText(Questions.getS4G2Choice2(randomnum));
 //        ans3.setText(Questions.getS4G2Choice3(randomnum));
 
-        Answer = Questions.getS4G1Answer(randomnum);
+        Answer = Questions.getS4G2Answer(randomnum);
         QuestionNum++;
 
     }

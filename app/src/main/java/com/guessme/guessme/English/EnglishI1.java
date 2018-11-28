@@ -219,7 +219,7 @@ public class EnglishI1 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(EnglishI1.this);
 
             alertDialog.setTitle("CONGRATULATIONS YOU ARE IN INTERMEDIATE");
-        alertDialog.setMessage("Choose the Correct answer");
+        alertDialog.setMessage("Direction: Choose the Correct answer");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

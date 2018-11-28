@@ -146,23 +146,23 @@ public class EnglishI2 extends AppCompatActivity {
 
         //When choice 1 is clicked
 
-        ans3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                restartTimer();
-
-                if (ans3.getText() == ei2Answer) {
-                    ei2Score = ei2Score + 1;
-                    updateScore(ei2Score);
-                    csounds.start();
-                    nextQuestion();
-                } else {
-                    nextQuestion();
-                    vibe.vibrate(100);
-                }
-
-            }
-        });
+//        ans3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                restartTimer();
+//
+//                if (ans3.getText() == ei2Answer) {
+//                    ei2Score = ei2Score + 1;
+//                    updateScore(ei2Score);
+//                    csounds.start();
+//                    nextQuestion();
+//                } else {
+//                    nextQuestion();
+//                    vibe.vibrate(100);
+//                }
+//
+//            }
+//        });
 
     }
 
@@ -181,7 +181,7 @@ public class EnglishI2 extends AppCompatActivity {
             startActivity(i);
             finish();
         } else {
-            questionNumber.setText(ei2QuestionNum + 1 + "/10 ");
+            questionNumber.setText(ei2QuestionNum + 1 + "/15 ");
             Random generator = new Random();
             int number = generator.nextInt(randomlist.size());
             randomnum = randomlist.get(number);
@@ -194,7 +194,7 @@ public class EnglishI2 extends AppCompatActivity {
 
         ans1.setText(EI2question.getEI2Choice1(randomnum));
         ans2.setText(EI2question.getEI2Choice2(randomnum));
-        ans3.setText(EI2question.getEI2Choice3(randomnum));
+//        ans3.setText(EI2question.getEI2Choice3(randomnum));
 
         ei2Answer = EI2question.getEI2Answer(randomnum);
         ei2QuestionNum++;

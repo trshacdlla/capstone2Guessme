@@ -27,13 +27,6 @@
             android:textAlignment="textEnd"
             android:visibility="invisible" />
 
-        <TextView
-            android:id="@+id/t4score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="0"
-            android:visibility="invisible" />
 
     </LinearLayout>
     <RelativeLayout
@@ -54,16 +47,17 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/t4score"
+            android:layout_width="41dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="47dp"
             android:layout_weight="1"
-            android:text="Level 1"
-            android:textAlignment="center"
+            android:text="  0"
             android:textColor="#000"
-            android:textSize="35sp"
-            android:visibility="invisible" />
-
+            android:textStyle="bold"/>
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
@@ -83,14 +77,13 @@
         android:text="0"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="50sp"
-        />
+        android:textSize="50sp" />
 
     <LinearLayout
         android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:layout_height="147dp"
+        android:layout_gravity="center"
+        android:gravity="center">
 
 
         <TextView
@@ -100,8 +93,8 @@
             android:text="Questions"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

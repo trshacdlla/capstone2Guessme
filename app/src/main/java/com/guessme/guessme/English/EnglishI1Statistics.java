@@ -1,4 +1,4 @@
-package com.guessme.guessme.Tech;
+package com.guessme.guessme.English;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,8 +16,7 @@ import com.guessme.guessme.R;
 
 import java.util.ArrayList;
 
-public class TechStatisticsB2 extends AppCompatActivity {
-
+public class EnglishI1Statistics extends AppCompatActivity {
     BarChart barChart;
     Button back;
 
@@ -29,27 +28,24 @@ public class TechStatisticsB2 extends AppCompatActivity {
     String level1,level2,level3,level4,level5;
 
     int congratss;
-
-    @Override
+       @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tech_statistics_b2);
+        setContentView(R.layout.activity_english_i1_statistics);
 
-        init();
-        graph();
-        button();
-    }
+           init();
+           graph();
+           button();
+       }
 
     //Initialize
     public void init(){
-        barChart=(BarChart) findViewById(R.id.TTB2barchart);
-        back=(Button) findViewById(R.id.TTB2back);
+        barChart=(BarChart) findViewById(R.id.ETI1barchart);
+        back=(Button) findViewById(R.id.ETI1back);
         congratss = getIntent().getIntExtra("congratss",0);
-        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(TechStatisticsB2.this);
-        level1 = mPref.getString("TechB1Score", " ");
-        level2 = mPref.getString("TechB2Score", " ");
+        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(EnglishI1Statistics.this);
+        level1 = mPref.getString("EnglI1Score", " ");
         slevel1 = Integer.parseInt(level1.toString());
-        slevel2 = Integer.parseInt(level2.toString());
     }
 
     //Functions of the graph
@@ -87,10 +83,10 @@ public class TechStatisticsB2 extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), TechScoreB2.class);
-                i.putExtra("score",slevel2);
-                int trials = getIntent().getIntExtra("tries", 1);
-                i.putExtra("tries", trials);
+                Intent i = new Intent(getApplicationContext(), EnglishIScore1.class);
+                int trials = getIntent().getIntExtra("EnglI1tries", 1);
+                i.putExtra("EnglI1tries", trials);
+                i.putExtra("score",slevel1);
                 i.putExtra("congratss", 1);
                 startActivity(i);
                 finish();

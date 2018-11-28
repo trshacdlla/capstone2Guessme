@@ -121,4 +121,14 @@
         android:textSize="22sp"
         android:background="@drawable/ebtn"/>
 
+    <Button
+        android:id="@+id/ei3ans3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/ebtn"
+        android:text="B. "
+        android:textSize="22sp" />
+
 </LinearLayout>

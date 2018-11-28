@@ -153,7 +153,7 @@ public class ScienceI1 extends AppCompatActivity {
             }
         });
 
-        //When choice 1 is clicked
+//          When choice 1 is clicked
 
         ans3.setOnClickListener(new View.OnClickListener() {
             @Override
