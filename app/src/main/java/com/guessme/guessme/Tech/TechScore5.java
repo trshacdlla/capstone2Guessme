@@ -146,7 +146,7 @@ public class TechScore5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (next.getText() == Next){
-                    Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent i = new Intent(getApplicationContext(),TechEx1.class);
                     startActivity(i);
                     finish();
                 }else{

@@ -37,12 +37,14 @@ public class English3 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english3);
+//        quiz = MediaPlayer.create(English3.this, R.raw.quiz);
+//        quiz.start();
 
         init();
         dialog();
@@ -214,7 +216,7 @@ public class English3 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(English3.this);
 
         alertDialog.setTitle("Learning Objectives: ");
-        alertDialog.setMessage("To gain an understanding of the terms ‘singular’ and ‘plural’");
+        alertDialog.setMessage("You will gain an understanding of the terms ‘singular’ and ‘plural’");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

@@ -16,14 +16,14 @@ import com.guessme.guessme.Tech.Terms;
 public class Agreement extends AppCompatActivity {
 //    AlertDialog context = alert.create();
     Context context = this;
-        public static MediaPlayer bgmusic;
+        public static MediaPlayer mix;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agreement);
-        bgmusic = MediaPlayer.create(Agreement.this, R.raw.bgmusic);
-        bgmusic.start();
-        bgmusic.setLooping(true);
+        mix = MediaPlayer.create(Agreement.this, R.raw.mix);
+       mix.start();
+       mix.setLooping(true);
 
 //        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 //        boolean agreed = sharedPreferences.getBoolean("agreed", false);
@@ -122,7 +122,7 @@ public class Agreement extends AppCompatActivity {
                 public void run() {
                     try {
                         int logoTimer = 0;
-                        while (logoTimer < 7000) {
+                        while (logoTimer < 5000) {
                             sleep(100);
                             logoTimer = logoTimer + 100;
                         }

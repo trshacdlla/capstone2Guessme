@@ -46,7 +46,19 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="English Expert"
+                android:textSize="25sp" />
 
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/EnglExbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
 
 
             <TextView
@@ -74,6 +86,19 @@
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/Mathbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Math Expert"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Mathexbarchart"
                 android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
@@ -105,7 +130,19 @@
                 android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Science Expert"
+                android:textSize="25sp" />
 
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/ScienceExbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,7 +173,24 @@
                 android:layout_height="200dp"
                 android:layout_marginBottom="50dp"
                 android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Technology Expert"
+                android:textSize="25sp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/TechExbarchart"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"></com.github.mikephil.charting.charts.BarChart>
+
         </LinearLayout>
+
     </ScrollView>
 
     <Button

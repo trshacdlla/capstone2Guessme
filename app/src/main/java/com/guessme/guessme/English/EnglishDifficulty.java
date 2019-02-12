@@ -85,7 +85,7 @@ public class EnglishDifficulty extends AppCompatActivity {
                 if (b == " "){
                     Toast.makeText(getApplicationContext(), "Finish the Intermediate mode first.", Toast.LENGTH_SHORT).show();
                 }else{
-                    i = new Intent(getApplicationContext(), English1.class);
+                    i = new Intent(getApplicationContext(), EnglishEx1.class);
                     startActivity(i);                }
             }
         });

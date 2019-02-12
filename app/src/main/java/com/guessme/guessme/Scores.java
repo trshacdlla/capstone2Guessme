@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class Scores extends AppCompatActivity{
 
-    private BarChart ebchart, echart,mchart,schart,tchart, sciichart, mbchart, tichart;
+    private BarChart ebchart, echart,mchart,schart,tchart, sciichart, mbchart, tichart, engexchart, sciexchart, mathexchart, techexchart;
     private Button back;
     private SharedPreferences mPref;
 
@@ -35,6 +35,10 @@ public class Scores extends AppCompatActivity{
         sciencebgraph();
         mathbgraph();
         tichartgraph();
+        englexgraph();
+        sciexncegraph();
+        mathxgraph();
+        techxgraph();
     }
 
     public void init(){
@@ -46,8 +50,12 @@ public class Scores extends AppCompatActivity{
         sciichart = (BarChart) findViewById(R.id.ScienceIbarchart);
         mbchart = (BarChart) findViewById(R.id.Mathbbarchart);
         tichart = (BarChart) findViewById(R.id.TechIbarchart);
-
+        engexchart = (BarChart) findViewById(R.id.EnglExbarchart);
+        sciexchart = (BarChart) findViewById(R.id.ScienceExbarchart);
+        mathexchart = (BarChart) findViewById(R.id.Mathexbarchart);
+        techexchart = (BarChart) findViewById(R.id.TechExbarchart);
         mPref = PreferenceManager.getDefaultSharedPreferences(Scores.this);
+
         back = (Button) findViewById(R.id.score_back_btn);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,6 +168,57 @@ public class Scores extends AppCompatActivity{
         echart.getAxisLeft().setAxisMaxValue(59);
         echart.getAxisLeft().setAxisMinValue(0);
     }
+
+    private void englexgraph(){
+        //Graph content
+        int elevel1 = 0;
+        int elevel2 = 0;
+        int elevel3 = 0;
+        int elevel4 = 0;
+        int elevel5 = 0;
+
+        String selevel1,selevel2,selevel3,selevel4,selevel5;
+
+        selevel1 = mPref.getString("EngEx1Score", "0");
+        selevel2 = mPref.getString("EngEx2Score", "0");
+        selevel3 = mPref.getString("EngEx3Score", "0");
+        selevel4 = mPref.getString("EngEx4Score", "0");
+        selevel5 = mPref.getString("EngEx5Score", "0");
+
+
+        elevel1 = Integer.parseInt(selevel1.toString());
+        elevel2 = Integer.parseInt(selevel2.toString());
+        elevel3 = Integer.parseInt(selevel3.toString());
+        elevel4 = Integer.parseInt(selevel4.toString());
+        elevel5 = Integer.parseInt(selevel5.toString());
+
+        ArrayList<BarEntry> barEntries = new ArrayList<>();
+        barEntries.add(new BarEntry(elevel1,0));
+        barEntries.add(new BarEntry(elevel2,1));
+        barEntries.add(new BarEntry(elevel3,2));
+        barEntries.add(new BarEntry(elevel4,3));
+        barEntries.add(new BarEntry(elevel5,4));
+        BarDataSet barDataSet = new BarDataSet(barEntries,"Levels");
+
+
+        //Graph top label
+        ArrayList<String> levels = new ArrayList<>();
+        levels.add("Lvl 1");
+        levels.add("Lvl 2");
+        levels.add("Lvl 3");
+        levels.add("Lvl 4");
+        levels.add("Lvl 5");
+
+        BarData data = new BarData(levels,barDataSet);
+        engexchart.setData(data);
+        engexchart.setDescription("");
+        engexchart.setDragEnabled(false);
+        engexchart.setTouchEnabled(false);
+        engexchart.getLegend().setEnabled(false);
+        engexchart.getAxisRight().setEnabled(false);
+        engexchart.getAxisLeft().setAxisMaxValue(59);
+        engexchart.getAxisLeft().setAxisMinValue(0);
+    }
     private void mathbgraph(){
         int mlevel1 = 0;
         int mlevel2 = 0;
@@ -260,6 +319,56 @@ public class Scores extends AppCompatActivity{
         mchart.getAxisLeft().setAxisMaxValue(59);
         mchart.getAxisLeft().setAxisMinValue(0);
     }
+    private void mathxgraph(){
+        int mlevel1 = 0;
+        int mlevel2 = 0;
+        int mlevel3 = 0;
+        int mlevel4 = 0;
+        int mlevel5 = 0;
+
+
+        String smlevel1,smlevel2,smlevel3,smlevel4,smlevel5;
+
+        smlevel1 = mPref.getString("MathEx1Score", "0");
+        smlevel2 = mPref.getString("MathEx2Score", "0");
+        smlevel3 = mPref.getString("MathEx3Score", "0");
+        smlevel4 = mPref.getString("MathEx4Score", "0");
+        smlevel5 = mPref.getString("MathEx5Score", "0");
+
+
+        mlevel1 = Integer.parseInt(smlevel1.toString());
+        mlevel2 = Integer.parseInt(smlevel2.toString());
+        mlevel3 = Integer.parseInt(smlevel3.toString());
+        mlevel4 = Integer.parseInt(smlevel4.toString());
+        mlevel5 = Integer.parseInt(smlevel5.toString());
+
+        //Graph content
+        ArrayList<BarEntry> barEntries = new ArrayList<>();
+        barEntries.add(new BarEntry(mlevel1,0));
+        barEntries.add(new BarEntry(mlevel2,1));
+        barEntries.add(new BarEntry(mlevel3,2));
+        barEntries.add(new BarEntry(mlevel4,3));
+        barEntries.add(new BarEntry(mlevel5,4));
+        BarDataSet barDataSet = new BarDataSet(barEntries,"Levels");
+
+        //Graph top label
+        ArrayList<String> levels = new ArrayList<>();
+        levels.add("Lvl 1");
+        levels.add("Lvl 2");
+        levels.add("Lvl 3");
+        levels.add("Lvl 4");
+        levels.add("Lvl 5");
+
+        BarData data = new BarData(levels,barDataSet);
+        mathexchart.setData(data);
+        mathexchart.setDescription("");
+        mathexchart.setDragEnabled(false);
+        mathexchart.setTouchEnabled(false);
+        mathexchart.getLegend().setEnabled(false);
+        mathexchart.getAxisRight().setEnabled(false);
+        mathexchart.getAxisLeft().setAxisMaxValue(59);
+        mathexchart.getAxisLeft().setAxisMinValue(0);
+    }
     private void sciencebgraph(){
         int slevel1 = 0;
         int slevel2 = 0;
@@ -357,6 +466,55 @@ public class Scores extends AppCompatActivity{
         schart.getAxisLeft().setAxisMinValue(0);
     }
 
+    private void sciexncegraph(){
+        int slevel1 = 0;
+        int slevel2 = 0;
+        int slevel3 = 0;
+        int slevel4 = 0;
+        int slevel5 = 0;
+
+        String sslevel1,sslevel2,sslevel3,sslevel4,sslevel5;
+
+        sslevel1 = mPref.getString("ScienceEx1Score", "0");
+        sslevel2 = mPref.getString("ScienceEx2Score", "0");
+        sslevel3 = mPref.getString("ScienceEx3Score", "0");
+        sslevel4 = mPref.getString("ScienceEx4Score", "0");
+        sslevel5 = mPref.getString("ScienceEx5Score", "0");
+
+        slevel1 = Integer.parseInt(sslevel1.toString());
+        slevel2 = Integer.parseInt(sslevel2.toString());
+        slevel3 = Integer.parseInt(sslevel3.toString());
+        slevel4 = Integer.parseInt(sslevel4.toString());
+        slevel5 = Integer.parseInt(sslevel5.toString());
+
+        //Graph content
+        ArrayList<BarEntry> barEntries = new ArrayList<>();
+        barEntries.add(new BarEntry(slevel1,0));
+        barEntries.add(new BarEntry(slevel2,1));
+        barEntries.add(new BarEntry(slevel3,2));
+        barEntries.add(new BarEntry(slevel4,3));
+        barEntries.add(new BarEntry(slevel5,4));
+        BarDataSet barDataSet = new BarDataSet(barEntries,"Levels");
+
+        //Graph top label
+        ArrayList<String> levels = new ArrayList<>();
+        levels.add("Lvl 1");
+        levels.add("Lvl 2");
+        levels.add("Lvl 3");
+        levels.add("Lvl 4");
+        levels.add("Lvl 5");
+
+        BarData data = new BarData(levels,barDataSet);
+        sciexchart.setData(data);
+        sciexchart.setDescription("");
+        sciexchart.setDragEnabled(false);
+        sciexchart.setTouchEnabled(false);
+        sciexchart.getLegend().setEnabled(false);
+        sciexchart.getAxisRight().setEnabled(false);
+        sciexchart.getAxisLeft().setAxisMaxValue(59);
+        sciexchart.getAxisLeft().setAxisMinValue(0);
+    }
+
     private void tichartgraph(){
         int tlevel1 = 0;
         int tlevel2 = 0;
@@ -452,6 +610,55 @@ public class Scores extends AppCompatActivity{
         tchart.getAxisRight().setEnabled(false);
         tchart.getAxisLeft().setAxisMaxValue(59);
         tchart.getAxisLeft().setAxisMinValue(0);
+    }
+
+    private void techxgraph(){
+        int tlevel1 = 0;
+        int tlevel2 = 0;
+        int tlevel3 = 0;
+        int tlevel4 = 0;
+        int tlevel5 = 0;
+
+        String stlevel1,stlevel2,stlevel3,stlevel4,stlevel5;
+
+        stlevel1 = mPref.getString("TechEx1Score", "0");
+        stlevel2 = mPref.getString("TechEx2Score", "0");
+        stlevel3 = mPref.getString("TechEx3Score", "0");
+        stlevel4 = mPref.getString("TechEx4Score", "0");
+        stlevel5 = mPref.getString("TechEx5Score", "0");
+
+        tlevel1 = Integer.parseInt(stlevel1.toString());
+        tlevel2 = Integer.parseInt(stlevel2.toString());
+        tlevel3 = Integer.parseInt(stlevel3.toString());
+        tlevel4 = Integer.parseInt(stlevel4.toString());
+        tlevel5 = Integer.parseInt(stlevel5.toString());
+
+        //Graph content
+        ArrayList<BarEntry> barEntries = new ArrayList<>();
+        barEntries.add(new BarEntry(tlevel1,0));
+        barEntries.add(new BarEntry(tlevel2,1));
+        barEntries.add(new BarEntry(tlevel3,2));
+        barEntries.add(new BarEntry(tlevel4,3));
+        barEntries.add(new BarEntry(tlevel5,4));
+        BarDataSet barDataSet = new BarDataSet(barEntries,"Levels");
+
+        //Graph top label
+        ArrayList<String> levels = new ArrayList<>();
+        levels.add("Lvl 1");
+        levels.add("Lvl 2");
+        levels.add("Lvl 3");
+        levels.add("Lvl 4");
+        levels.add("Lvl 5");
+
+        BarData data = new BarData(levels,barDataSet);
+        techexchart.setData(data);
+        techexchart.setDescription("");
+        techexchart.setDragEnabled(false);
+        techexchart.setTouchEnabled(false);
+        techexchart.getLegend().setEnabled(false);
+        techexchart.getAxisRight().setEnabled(false);
+        techexchart.getAxisLeft().setAxisMaxValue(59);
+        techexchart.getAxisLeft().setAxisMinValue(0);
     }
 
 

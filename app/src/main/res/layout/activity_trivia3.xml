@@ -13,10 +13,10 @@
         android:id="@+id/trivia"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="97% of water on the planet is salty and not usable. 2% is frozen. That leaves us with just 1% of usable water!"
-        android:textColor="#000"
-        android:textSize="25dp"
         android:layout_marginTop="150dp"
+        android:text="97% of water on the planet is salty and not usable. 2% is frozen. That leaves us with just 1% of usable water!"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="28dp"
 
         />
 

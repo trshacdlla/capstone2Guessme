@@ -35,7 +35,7 @@ public class Math2 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-    static MediaPlayer bgmusic;
+//    static MediaPlayer bgmusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

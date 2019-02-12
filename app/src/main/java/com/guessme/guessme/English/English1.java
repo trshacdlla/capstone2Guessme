@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.guessme.guessme.Agreement;
 import com.guessme.guessme.MainActivity;
 import com.guessme.guessme.R;
 
@@ -39,13 +40,14 @@ public class English1 extends AppCompatActivity {
 
 
     private Vibrator vibe;
-
-    static MediaPlayer bgmusic;
+//
+//    static MediaPlayer quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english1);
-
+//        quiz = MediaPlayer.create(English1.this, R.raw.quiz);
+//        quiz.start();
         dialog();
         init();
         nextQuestion();
@@ -59,7 +61,7 @@ public class English1 extends AppCompatActivity {
 
         questions = (TextView) findViewById(R.id.e1question);
         timer = (TextView) findViewById(R.id.e1Timer);
-        score = (TextView) findViewById(R.id.ei1score);
+        score = (TextView) findViewById(R.id.e1score);
         questionNumber = (TextView) findViewById(R.id.e1questionNumber);
 
         ans1 = (Button) findViewById(R.id.e1ans1);
@@ -217,7 +219,7 @@ public class English1 extends AppCompatActivity {
             final AlertDialog.Builder alertDialog = new AlertDialog.Builder(English1.this);
 
             alertDialog.setTitle("Learning Objective:");
-            alertDialog.setMessage(" By the end of this level, the children are expected to know the proper usage of Is, Are, and Am.");
+            alertDialog.setMessage("Hi, you will learn how to know the proper usage of Is, Are, and Am.");
             alertDialog.setCancelable(false);
             // Setting Dialog Message
 

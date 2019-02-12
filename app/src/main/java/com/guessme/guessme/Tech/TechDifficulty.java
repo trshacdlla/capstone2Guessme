@@ -86,7 +86,7 @@ public class TechDifficulty extends AppCompatActivity {
                 if (b == " "){
                     Toast.makeText(getApplicationContext(), "Finish the Intermediate mode first.", Toast.LENGTH_SHORT).show();
                 }else{
-                    i = new Intent(getApplicationContext(), Tech1.class);
+                    i = new Intent(getApplicationContext(), TechEx1.class);
                     startActivity(i);                }
             }
         });

@@ -423,7 +423,7 @@ public class ScienceQuestions {
             {"I can ___ the radio from my room", "Hear", " Nose", " Tongue","Hear"},
             {" Did you ___ that sweet candy ", "Hear", " Taste", " Tongue"," Taste"},
             {"I can ___ the mountain from here.", "Hear", "See ","Smell ", "See "},
-            {". I think I ___ a dog. ", "Hear", "See ","Smell ", "See "},
+            {"I think I ___ a dog. ", "Hear", "See ","Smell ", "See "},
             {"I ___ my classmates shouting", "Hear", " Nose", " Tongue","Hear"}
 
     };
@@ -1177,5 +1177,225 @@ public class ScienceQuestions {
         String answer = S5G2P2Questions[a][4];
         return answer;
     }
+
+    //EXPERT Level 1
+    private String ScienceE1Questions [][]= {
+            {"Water"," Solid ", " Liquid "," Gas "," Liquid "}, //1
+            {" Smoke from a car "," Solid ", " Liquid "," Gas "," Gas "}, //2
+            {"Bowling ball "," Solid ", " Liquid "," Gas "," Solid "}, //3
+            {" Bond paper  "," Solid ", " Liquid "," Gas "," Solid "}, //4
+            {" Steam from hot coffee "," Solid ", " Liquid "," Gas "," Gas "}, //5
+            {" Mango juice "," Solid ", " Liquid "," Gas "," Liquid "}, //6
+            {" Hollow blocks "," Solid ", " Liquid "," Gas "," Solid "},  //7
+            {" Door knob "," Solid ", " Liquid "," Gas "," Solid "}, //8
+            {" Saltwater "," Solid ", " Liquid "," Gas "," Liquid "}, //9
+            {" Air "," Solid ", " Liquid "," Gas "," Gas "} //10
+    };
+
+    public String getEx1Questions(int a){
+        String question =ScienceE1Questions[a][0];
+        return question;
+    }
+    public String getEx1Choice1(int a){
+        String choice1 = ScienceE1Questions[a][1];
+        return choice1;
+    }
+    public String getEx1Choice2(int a){
+        String choice2 = ScienceE1Questions[a][2];
+        return choice2;
+    }
+    public String getEx1Choice3(int a){
+        String choice3 = ScienceE1Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx1Answer(int a){
+        String answer = ScienceE1Questions[a][4];
+        return answer;
+    }
+
+    //EXPERT Level 2
+    private String ScienceE2Questions [][]= {
+            {"Which of the following is an example of a solid state of matter?","Air", "Juice","Rocks","Rocks"}, //1
+            {"Which of the following has the highest ease of flow?","Solid", "Liquid","Gas","Gas"}, //2
+            {"Which state of matter takes up a different amount of space when put into a different container?","Liquid", "Gas","Liquid and Gas","Liquid and Gas"}, //3
+            {"What property of matter measures how tightly packed is an object?","Mass", "Density","Weight","Mass"}, //4
+            {"What property of matter measures how heavy an object is due to pull of gravity?","Mass", "Weight","Volume","Weight"}, //5
+            {"Which of the following is an example of a solid state of matter?","Water", "Breath","Broom","Broom"}, //6
+            {"What property of matter describes the hotness and coldness of an object?","Density", "Temperature","Mass","Temperature"},  //7
+            {"What does it mean something is toxic?","It is harmful.", "It can be eaten.","It is good for you.","It is harmful."}, //8
+            {"If an object flows on a water, it shows which property of matter?","Volume", "Buoyancy","Weight","Buoyancy"}, //9
+            {"What property of matter does a balance scale measure?","Weight", "Density","Volume","Weight"}, //10
+            {"In ____ molecules are closely packed.","Solid", "Liquid","Gas","Solid"}, //11
+            {"A ___ is a nearly incompressible fluid that conforms to the shape of its container ","Mass", "Liquid","Density","Liquid"},  //12
+            {"A __ is a measure of mass per unit of volume. ","Mass", "Liquid","Density","Density"}, //13
+            {"The ___ of an object is the gravitational force between the object and the Earth.","Weight", "Buoyancy","Liquid","Weight"}, //14
+            {"It is a systematic knowledge of the physical or material world gained through observation and experimentation.","Math", "Science","English","Science"} //15
+    };
+
+    public String getEx2Questions(int a){
+        String question =ScienceE2Questions[a][0];
+        return question;
+    }
+    public String getEx2Choice1(int a){
+        String choice1 = ScienceE2Questions[a][1];
+        return choice1;
+    }
+    public String getEx2Choice2(int a){
+        String choice2 = ScienceE2Questions[a][2];
+        return choice2;
+    }
+    public String getEx2Choice3(int a){
+        String choice3 = ScienceE2Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx2Answer(int a){
+        String answer = ScienceE2Questions[a][4];
+        return answer;
+    }
+
+    //EXPERT Level 3
+    private String ScienceE3Questions [][]= {
+            {"Amphibians can both live in terrestrial and aquatic habitats","True", "False","True"}, //1
+            {"Monkeys are considered to be aerial animals.","True", "False","False"}, //2
+            {"Animals should be handled forcefully to tame them.","True", "False","False"}, //3
+            {"Reptiles are warm-blooded animals.","True", "False","False"}, //4
+            {"Mammals produce milk to feed their live young.","True", "False","True"}, //5
+            {"Goat","Milk", "Eggs","Milk"}, //6
+            {"Chicken","Eggs", "Coat","Eggs"},  //7
+            {"Horse","Coat", "Leather Shoes","Leather Shoes"}, //8
+            {"Pig","Ham", "Milk","Ham"}, //9
+            {"Sheep","Coat", "Milk","Coat"}, //10
+            {"Which of the following is NOT considered as a habitat?","Aquatic", "Forestrial","Forestrial"}, //11
+            {"Lisa found a lost puppy. How should she approach the animal?","Run towards the animal", "Calmly approach it","Calmly approach it"},  //12
+            {"Which of the following is a characteristic of a reptile","It is cold-blooded", "It is warm-blooded","It is cold-blooded"}, //13
+            {"Which of the following is NOT a characteristic of a mammal?","It is cold-blooded", "It is able to produce milk","It is cold-blooded"}, //14
+            {"Which of the following is a terrestrial habitat?","Grassland", "Ocean","Grassland"}, //15
+            {"Which of the following animals are used as livestock?","Dogs", "Cows","Cows"}, //16
+            {"Which habitat do you commonly find birds belong?","Aerial", "Terrestrial","Aerial"},  //17
+            {"Which of the following is NOT an aquatic animal?","Jellyfish", "Cat","Cat"}, //18
+            {"Which of the following is proper handling of a pet?","Shout at your pet", "Handle your pet gently ","Handle your pet gently "}, //19
+            {"Which characteristics will help Howie identify a bird?","It should have a beak, feather and wings", "It should have fur and legs","It should have a beak, feather and wings"} //20
+    };
+
+    public String getEx3Questions(int a){
+        String question =ScienceE3Questions[a][0];
+        return question;
+    }
+    public String getEx3Choice1(int a){
+        String choice1 = ScienceE3Questions[a][1];
+        return choice1;
+    }
+    public String getEx3Choice2(int a){
+        String choice2 = ScienceE3Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx3Answer(int a){
+        String answer = ScienceE3Questions[a][3];
+        return answer;
+    }
+
+    //EXPERT Level 4
+    private String ScienceE4Questions [][]= {
+            {"Plants can only reproduce asexually.","True", "False","False"}, //1
+            {"Tall and green pine trees reproduce through seeds.","True", "False","True"}, //2
+            {"Non flowering plants like ferns and moss plants reproduce from spores.","True", "False","True"}, //3
+            {"A flower is pollinated when a grain of pollen falls on the stigma.","True", "False","True"}, //4
+            {"The stamens are the male reproductive parts of the flower.","True", "False","True"}, //5
+            {"Nectar, a sugar rich food is located deep inside the flower.","True", "False","True"}, //6
+            {"If the pollen falls on the stigm of a similar plant, fertilization may not occur.","True", "False","False"},  //7
+            {"Plants both flowering and non flowering reproduce through fertilization or sexual fertilization.","True", "False","True"}, //8
+            {"Pistils, stamen, petals, and sepals are considered parts of the flower.","True", "False","True"}, //9
+            {"Non flowering plants such as moss and ferns grow from their seeds.","True", "False","False"}, //10
+            {"Plant life cycles can be divided into two parts.","True", "False","True"}, //11
+            {"It is believed that brown algae are the early ancestors of plants.","True", "False","False"},  //12
+            {"More than 260,000 plants species","True", "False","True"}, //13
+            {"Vascular plants depends on diffusion and osmosic to obtain and move nutrients and water around the plant","True", "False","True"}, //14
+            {"Because the lack of vessels, non vascular plants are small in size.","True", "False","True"}, //15
+            {"Vascular plants can be almost any size because the vessels can transport materials around the plant.","True", "False","True"}, //16
+            {"Plans without seeds are divided into two groups.","True", "False","False"},  //17
+            {"Mosses and liverworts don’t have a true roots, stems, or leaves but they do have similar structure to carry out some activities","True", "False","True"}, //18
+            {"Liverworts and mosses are usually the last organism to inhabit a new environment.","True", "False","False"}, //19
+            {"Since ferns, horsetails, and club mosses are nonvascular, some of the early species were quite tall.","True", "False","False"}, //20
+            {"Seedless plants produce seeds, structure that protects and nourish young sporophytes.","True", "False","True"}, //21
+            {"The female gamete of seeds plants do not need water to travel to the female gametes, they develop inside tiny structures that can be transported by wind or animals","True", "False","False"},  //22
+            {"Gymnosperms are divided into two classes","True", "False","False"}, //23
+            {"There are two types of roots","True", "False","True"}, //24
+            {"The main function of the roots is to get food for the plant","True", "False","False"} //25
+    };
+
+    public String getEx4Questions(int a){
+        String question =ScienceE4Questions[a][0];
+        return question;
+    }
+    public String getEx4Choice1(int a){
+        String choice1 = ScienceE4Questions[a][1];
+        return choice1;
+    }
+    public String getEx4Choice2(int a){
+        String choice2 = ScienceE4Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx4Answer(int a){
+        String answer = ScienceE4Questions[a][3];
+        return answer;
+    }
+
+    //EXPERT Level 5
+    private String ScienceE5Questions [][]= {
+            {"The moon revolves around the earth.","True", "False","True"}, //1
+            {"The sun is a big ball of hot glowing asses.","True", "False","True"}, //2
+            {"There are 7 planets in the solar system.","True", "False","False"}, //3
+            {"The moon reflects the light of the sun at night.","True", "False","True"}, //4
+            {"The sun revolves around the earth. ","True", "False","False"}, //5
+            {"The sun and moon are some of the natural objects seen in the sky.","True", "False","True"}, //6
+            {"Climate change is the average weather condition in a particular place.","True", "False","False"},  //7
+            {"Stormy weather does not bring typhoon.","True", "False","False"}, //8
+            {"Freshwater covers most of the earth's surface.","True", "False","False"}, //9
+            {"Wind is known as a moving air.","True", "False","True"}, //10
+            {"The highest mountain on a planet in the solar system is on Mars.","True", "False","True"}, //11
+            {"On Mercury, the temperature never reaches freezing point","True", "False","False"},  //12
+            {"Only two men walked on the moon","True", "False","False"}, //13
+            {"Pluto is smaller than our moon","True", "False","True"}, //14
+            {"On Venus a day is longer than a year","True", "False","True"}, //15
+            {"The surface of Venus is almost flat","True", "False","False"}, //16
+            {"The largest planet in the solar system is Jupiter","True", "False","True"},  //17
+            {"Our solar system is almost at the center of milky way","True", "False","False"}, //18
+            {"The rings of Saturn are an optical illusion","True", "False","False"}, //19
+            {"Which of the following is true about the sun?","It revolves around the earth", "It is the nearest star to the earth","It revolves around the earth"}, //20
+            {"Which is likely to happen if a part of the earth is not facing the sun?","The side of the earth will be night time", "The side of the earth will be night time","The side of the earth will be night time"}, //21
+            {"Which of the following is not a planet of the solar planet?","Luna", "Mars","Luna"},  //22
+            {"Which is not true about a star? ","It is a ball of hot, glowing gasses", "It gives off heat and light","It is a ball of hot, glowing gasses"}, //23
+            {"Which of the following is not true to prevent heat damage?","Playing outside at 12 noon", "Wearing a hat","Playing outside at 12 noon"}, //24
+            {"Which natural object in the sky serves as a guide for explorers?","Stars", "Planets","Stars"}, //25
+            {"Which is not true about earth's moon?","It gives off its natural light", "It causes falling and rising of tides ","It causes falling and rising of tides "}, //26
+            {"Which of the following is a harmful effect of the sun?","It can cause skin damage", "It can wet objects","It can cause skin damage"},  //27
+            {"Which of the following should you do to protect your eyes from the sun's damaging effect's? ","Put on sunscreen", "Observe the sun directly","Put on sunscreen"}, //28
+            {"Which of the following is a helpful interaction of the moon and the earth?","It gives energy to plants", "It causes daylight","It gives energy to plants"}, //29
+            {"Which of the following is NOT a characteristic of a mammal?","It is cold-blooded", "It is able to produce milk","It is cold-blooded"} //30
+
+    };
+
+    public String getEx5Questions(int a){
+        String question =ScienceE5Questions[a][0];
+        return question;
+    }
+    public String getEx5Choice1(int a){
+        String choice1 = ScienceE5Questions[a][1];
+        return choice1;
+    }
+    public String getEx5Choice2(int a){
+        String choice2 = ScienceE5Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx5Answer(int a){
+        String answer = ScienceE5Questions[a][3];
+        return answer;
+    }
+
 
 }

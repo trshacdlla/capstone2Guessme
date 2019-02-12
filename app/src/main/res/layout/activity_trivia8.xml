@@ -13,11 +13,11 @@
         android:id="@+id/trivia"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Your mouth produces about one litre of saliva each day!"
-        android:textColor="#fff"
-        android:textSize="25dp"
         android:layout_marginTop="100dp"
-        />
+        android:text="Your mouth produces about one litre of saliva each day!"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="29dp" />
 
     <Button
         android:id="@+id/Trivia8Back"

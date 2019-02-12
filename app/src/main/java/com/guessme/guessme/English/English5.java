@@ -37,13 +37,14 @@ public class English5 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english5);
-
+//        quiz = MediaPlayer.create(English5.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
         nextQuestion();
@@ -213,8 +214,8 @@ public class English5 extends AppCompatActivity {
     public void dialog(){
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(English5.this);
 
-        alertDialog.setTitle("Instructions");
-        alertDialog.setMessage("Choose the best answer for the following questions.");
+        alertDialog.setTitle("Learning Objective:");
+        alertDialog.setMessage("Hi you will learn about the plural and singular verb or noun");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

@@ -94,25 +94,25 @@ public class ScienceScoreI5 extends AppCompatActivity {
         bgtryagain = MediaPlayer.create(getApplicationContext(), R.raw.tryagain);
 
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
-        score.setTypeface(custom_font);
-        right.setTypeface(custom_font);
-        wrong.setTypeface(custom_font);
-        numtry.setTypeface(custom_font);
-        congrats.setTypeface(custom_font);
-        name.setTypeface(custom_font);
-
-        retry.setTypeface(custom_font);
-        next.setTypeface(custom_font);
-        stat.setTypeface(custom_font);
-        txtscore.setTypeface(custom_font);
-        txtwrong.setTypeface(custom_font);
-        txtcorrect.setTypeface(custom_font);
-
-        TextView level = (TextView) findViewById(R.id.level);
-        level.setTypeface(custom_font);
-        TextView trytxt = (TextView) findViewById(R.id.textView2);
-        trytxt.setTypeface(custom_font);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/fascinate.ttf");
+//        score.setTypeface(custom_font);
+//        right.setTypeface(custom_font);
+//        wrong.setTypeface(custom_font);
+//        numtry.setTypeface(custom_font);
+//        congrats.setTypeface(custom_font);
+//        name.setTypeface(custom_font);
+//
+//        retry.setTypeface(custom_font);
+//        next.setTypeface(custom_font);
+//        stat.setTypeface(custom_font);
+//        txtscore.setTypeface(custom_font);
+//        txtwrong.setTypeface(custom_font);
+//        txtcorrect.setTypeface(custom_font);
+//
+//        TextView level = (TextView) findViewById(R.id.level);
+//        level.setTypeface(custom_font);
+//        TextView trytxt = (TextView) findViewById(R.id.textView2);
+//        trytxt.setTypeface(custom_font);
 
         confetti = getIntent().getIntExtra("congratss",0);
         if (correct >= totalquestion*.7){
@@ -202,7 +202,7 @@ public class ScienceScoreI5 extends AppCompatActivity {
                             }
                         }else{
                         }
-                        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                        Intent i = new Intent(getApplicationContext(),ScienceEx1.class);
                         startActivity(i);
                         finish();
                     }else {

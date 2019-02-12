@@ -57,7 +57,7 @@ public class MathDifficulty extends AppCompatActivity {
         Beginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                i = new Intent(getApplicationContext(), M1G1.class);
+                    i = new Intent(getApplicationContext(), M1G1.class);
                 startActivity(i);
             }
         });
@@ -86,7 +86,7 @@ public class MathDifficulty extends AppCompatActivity {
                 if (b == " "){
                     Toast.makeText(getApplicationContext(), "Finish the Intermediate mode first.", Toast.LENGTH_SHORT).show();
                 }else{
-                    i = new Intent(getApplicationContext(), Math1.class);
+                    i = new Intent(getApplicationContext(), MathE1.class);
                     startActivity(i);                }
             }
         });

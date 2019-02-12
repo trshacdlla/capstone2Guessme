@@ -40,7 +40,7 @@ public class EnglishI1 extends AppCompatActivity {
 
     private Vibrator vibe;
 
-    static MediaPlayer bgmusic;
+    static MediaPlayer quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

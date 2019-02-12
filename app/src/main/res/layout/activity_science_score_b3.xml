@@ -14,12 +14,26 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 3"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="25dp" />
         <TextView
             android:id="@+id/STB3Congrats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Congratulation!!!"
-            android:layout_marginTop="50dp"
+            android:text="Congratulations!!"
+            android:shadowColor="#1d70cf"
+            android:shadowDx="4.0"
+            android:shadowDy="4.0"
+            android:shadowRadius="50"
+            android:textColor="#3dbbff"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="30dp" />
 
@@ -33,13 +47,6 @@
             android:textSize="30sp" />
 
 
-        <TextView
-            android:id="@+id/level"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Level 3"
-            android:textAlignment="center"
-            android:textSize="25dp" />
 
         <AbsoluteLayout
             android:layout_width="match_parent"

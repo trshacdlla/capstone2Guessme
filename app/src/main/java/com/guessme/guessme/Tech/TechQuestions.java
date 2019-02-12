@@ -925,6 +925,471 @@ public class TechQuestions {
         return answer;
     }
 
+    private List<Integer> TechEx1Questions = Arrays.asList(
+
+            R.drawable.tech21,
+            R.drawable.tech22,
+            R.drawable.tech23,
+            R.drawable.tech24,
+            R.drawable.tech25,
+            R.drawable.tech26,
+            R.drawable.tech27,
+            R.drawable.tech28,
+            R.drawable.tech29,
+            R.drawable.tech30);
 
 
-}
+
+    private String TechEx1Choices [][]= {
+            {"Compass", "Safari", "Map", "Safari"}, //21
+
+            {"bluetooth", "bluefish", "wifi", "bluetooth"}, //22
+
+            {"photo", "gallery", "Camera", "Camera"}, //23
+
+            {"Firewall", "Firebrick", "firesquare", "Firewall"}, //24
+
+            {"Lets play", "Youtube", "Videos", "Youtube"}, //25
+
+            {"Instagram", "Photography", "5Camera2", "Instagram"}, //26
+
+            {"Yahoo!", "Yes!", "Yappy!", "Yahoo!"}, //27
+
+            {"eMail", "Ymail", "Gmail", "Gmail"}, //28
+
+            {"Google map", "Google point", "Google location", "Google map"}, //29
+
+            {"Google storage", "Google drive", "Google diary", "Google drive"}  //30
+
+
+            };
+
+    public Integer getTex1Questions(int a){
+        Integer question = TechEx1Questions.get(a);
+        return question;
+    }
+    public String getTex1Choice1(int a){
+        String choice1 = TechEx1Choices[a][0];
+        return choice1;
+    }
+    public String getTex1Choice2(int a){
+        String choice2 = TechEx1Choices[a][1];
+        return choice2;
+    }
+    public String getTex1Choice3(int a){
+        String choice3 = TechEx1Choices[a][2];
+        return choice3;
+    }
+    public String getTex1Answer(int a){
+        String answer = TechEx1Choices[a][3];
+        return answer;
+    }
+
+    private String Techex2Questions [][]= {
+
+            {"A hand-held pointing device that detects two-dimensional motion relative to a surface.",
+                    "Trackball", "Mouse", "Printer","Mouse"}, //6
+
+            {"A typewriter-style device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches",
+                    "Type writer", "Mouse", "Keyboard","Keyboard"}, //7
+
+            {"An output device which displays information in pictorial form.",
+                    "Monitor", "TV", "LED","Monitor"}, //8
+
+            {"It holds together many of the crucial components of a computer",
+                    "Hard drive", "Motherboard", "System Unit","Motherboard"}, //9
+
+            {"A high-capacity, self-contained storage device containing a read-write mechanism",
+                    "Hard drive", "Web cam", "Motherboard","Hard drive"}, //10
+
+            {"A video camera that inputs to a computer connected to the Internet, so that its images can be viewed by Internet users.",
+                    "Digital Camera", "DSLR", "Web camera","Web camera"}, //11
+
+            {"a machine for printing text or pictures onto paper, especially one linked to a computer.",
+                    "Scanner", "Printer", "Fax machine","Printer"}, //12
+
+            {"a computer that is portable and suitable for use while traveling.",
+                    "Desktop", "Mouse", "Laptop","Laptop"}, //13
+
+            {"A computer input device in the form of a small panel containing different touch-sensitive areas.",
+                    "Laser", "Mouse", "Touchpad","Touchpad"}, //14
+
+            {"fans that draw cooler air into the case from the outside, expel warm air from inside, or move air across a heat sink to cool a particular component.",
+                    "Electric fan", "Cooling fan", "Exhaust fan","Cooling fan"}, //15
+
+            {"an electronic device that manipulates information, or data. It has the ability to store, retrieve, and process data",
+                    "Computer", "Cellphone", "Hard drive","Computer"}, //16
+
+            {"a compact disc used as a read-only optical memory device for a computer system.",
+                    "Trackball", "DVD", "CD-ROM","CD-ROM"}, //17
+
+            {"a plastic case containing a ball on the top that moves a computer cursor around on the screen. The user can move the ball with their thumb or fingers, and sensors inside the case detect which direction the ball is moving",
+                    "Basketball", "Track ball", "Mouse","Track ball"}, //18
+
+            {"a type of disk storage composed of a disk of thin and flexible magnetic storage medium, sealed in a rectangular plastic enclosure lined with fabric that removes dust particles.",
+                    "USB", "Floppy disk", "Flash drive","Floppy disk"}, //19
+
+            {"a pair of earphones typically joined by a band placed over the head, for listening to audio signals such as music or speech.",
+                    "Microphone", "Headphones", "Speaker","Headphones"}  //20
+
+    };
+
+    public String getTex2Questions(int a){
+        String question = Techex2Questions[a][0];
+        return question;
+    }
+
+    public String getTex2Choice1(int a){
+        String choice1 = Tech2Questions[a][1];
+        return choice1;
+    }
+    public String getTex2Choice2(int a){
+        String choice2 = Tech2Questions[a][2];
+        return choice2;
+    }
+    public String getTex2Choice3(int a){
+        String choice3 = Techex2Questions[a][3];
+        return choice3;
+    }
+    public String getTex2Answer(int a){
+        String answer = Techex2Questions[a][4];
+        return answer;
+    }
+    private String Techex3Questions [][]= {
+
+
+            {"A series of graphical web browsers developed by Microsoft ",
+                    "Firefox","Chrome", "Explorer","Explorer"}, //11
+
+            {"A simple raster graphics editor that has been included with all versions of Microsoft Windows.",
+                    "Paint","Photoshop", "Edit","Paint"}, //12
+
+            {"Refers to the loudness or softness of a sound",
+                    "Air","Volume", "Electric","Volume"}, //13
+
+            {"A simple text editor for Microsoft Windows and a basic text-editing program which enables computer users to create documents.",
+                    "Chrome","textword", "Notepad","Notepad"}, //14
+
+            {"A temporary storage for files that have been deleted in a file manager by the user",
+                    "Trash bin","Recycle bin", "Storage bin","Recycle bin"}, //15
+
+            {"A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, and VCDs",
+                    "dvd player","Media player", "cd player","Media player"}, //16
+
+            {"A web browser developed by Apple based on the WebKit engine. ",
+                    "Safari","Chrome", "Firefox","Safari"}, //17
+
+            {"A wireless technology standard for exchanging data over short distances from fixed and mobile devices",
+                    "signal","Bluetooth", "wifi","Bluetooth"}, //18
+
+            {"A graphical operating systems developed and marketed by Apple",
+                    "MacOS","Windows", "Linux","MacOS"}, //19
+
+            {"A free advertising-supported email service developed by Google.",
+                    "Yahoo", "Gmail", "Messenger","Gmail"},  //20
+
+            {"A file storage and synchronization service developed by Google.",
+                    "Google storage","Google drive", "Google diary","Google drive"}, //21
+
+            {"A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+                    "Firewall","Firebrick", "firesquare","Firewall"}, //22
+
+            {"A web mapping service developed by Google",
+                    "Google map","google point", "google location","Google map"}, //23
+
+            {"A raster graphics editor developed and published by Adobe",
+                    "Photoshop","notepad", "paint","Photoshop"}, //24
+
+            {"A process for reproducing text and images using a master form or template.",
+                    "Copy","Scan", "Print","Print"}, //25
+
+            {"A process that optically scans images, printed text, handwriting or an object and converts it to a digital image.",
+                    "Copy","Scan", "Print","Scan"}, //26
+
+            {"Removes the item from its current location and places it into the clipboard",
+                    "Cut", "Copy","Paste","Cut"}, //27
+
+            {"duplicating a section of a document and placing it in a clipboard",
+                    "Cut","Copy", "Paste","Copy"}, //28
+
+            {"A command that allows you to insert data from the clipboard into an application",
+                    "Cut","Copy", "Paste","Paste"}, //29
+
+            {"A telecommunications application software product that specializes in providing video chat and voice calls between computers.",
+                    "Skype","Message", "facebook","Skype"},  //30
+
+            {"An anti-malware component of Microsoft Windows.",
+                    "Windows","Windows defender", "Windows firewall","Windows defender"}, //31
+
+            {"a web-based suite of webmail, contacts, tasks, and calendaring services from Microsoft.",
+                    "MS Outlook","MS ONENOTE", "MS word","MS Outlook"}, //32
+
+            {"an entry-level desktop publishing application from Microsoft",
+                    "MS Outlook","MS ONENOTE", "MS Publisher","MS Publisher"}, //33
+
+            {"A vector graphics editor developed and marketed by Adobe Systems.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Photoshop","Adobe Illustrator"}, //34
+
+            {"Viewing, organizing and editing large numbers of digital images.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Lightroom","Adobe Lightroom"}, //35
+
+            {"View, create, manipulate, print and manage files in Portable Document Format. ",
+                    "Adobe illustrator","Adobe Lightroom", "Adobe Acrobat","Adobe Acrobat"}, //36
+
+            {"a digital visual effects, motion graphics, and compositing application developed by Adobe",
+                    "Adobe lightroom","Adobe After effects", "Adobe Photoshop","Adobe After effects"}, //37
+
+            {"A timeline-based video editing app developed by Adobe ",
+                    "Windows movie maker","VLC player", "Adobe Premiere pro","Adobe Premiere pro"}, //38
+
+            {"an integrated suite of storytelling applications for the mobile and web developed by Adobe Systems. ",
+                    "Adobe spark","Adobe lightroom", "Adobe illustrator","Adobe spark"}, //39
+
+            {"a multimedia authoring and computer animation program developed by Adobe ",
+                    "Adobe spark","Adobe Animate", "Adobe illustrator","Adobe Animate"}, //40
+
+    };
+
+    public String getTex3Questions(int a){
+        String question = Techex3Questions[a][0];
+        return question;
+    }
+    public String getTex3Choice1(int a){
+        String choice1 = Techex3Questions[a][1];
+        return choice1;
+    }
+    public String getTex3Choice2(int a){
+        String choice2 = Techex3Questions[a][2];
+        return choice2;
+    }
+    public String getTex3Choice3(int a){
+        String choice3 = Techex3Questions[a][3];
+        return choice3;
+    }
+    public String getTex3Answer(int a){
+        String answer = Techex3Questions[a][4];
+        return answer;
+    }
+
+    private String Techex4Questions [][]= {
+
+
+            {"A series of graphical web browsers developed by Microsoft ",
+                    "Firefox","Chrome", "Explorer","Explorer"}, //11
+
+            {" It is a hardware device used to maintain a voltage to electronic devices.",
+                    " mouse ", " monitor ", " computer AVR "," computer AVR "}, //10
+
+            {" it is a small electronic device that is used for storing and transferring files.",
+                    " Flash drive ", " Monitor ", " Mouse "," Flash drive "}, //11
+
+            {" it is a video camera that is connected to a computer and can record videos and capture photos",
+                    " Web Camera ", " Monitor ", " Cellphone "," Web Camera "}, //12
+
+            {" it is a small surface  that provides a better movement for your mouse ",
+                    " keyboard ", "Mouse", " Mousepad "," Mousepad "}, //13
+            {"A web browser developed by Apple based on the WebKit engine. ",
+                    "Safari","Chrome", "Firefox","Safari"}, //17
+
+            {"A wireless technology standard for exchanging data over short distances from fixed and mobile devices",
+                    "signal","Bluetooth", "wifi","Bluetooth"}, //18
+
+            {"A graphical operating systems developed and marketed by Apple",
+                    "MacOS","Windows", "Linux","MacOS"}, //19
+
+            {"A free advertising-supported email service developed by Google.",
+                    "Yahoo", "Gmail", "Messenger","Gmail"},  //20
+
+            {"A file storage and synchronization service developed by Google.",
+                    "Google storage","Google drive", "Google diary","Google drive"}, //21
+
+            {"A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+                    "Firewall","Firebrick", "firesquare","Firewall"}, //22
+
+            {"A web mapping service developed by Google",
+                    "Google map","google point", "google location","Google map"}, //23
+
+            {"A raster graphics editor developed and published by Adobe",
+                    "Photoshop","notepad", "paint","Photoshop"}, //24
+
+            {"A process for reproducing text and images using a master form or template.",
+                    "Copy","Scan", "Print","Print"}, //25
+
+            {"A process that optically scans images, printed text, handwriting or an object and converts it to a digital image.",
+                    "Copy","Scan", "Print","Scan"}, //26
+
+            {"Removes the item from its current location and places it into the clipboard",
+                    "Cut", "Copy","Paste","Cut"}, //27
+
+            {"duplicating a section of a document and placing it in a clipboard",
+                    "Cut","Copy", "Paste","Copy"}, //28
+
+            {"A command that allows you to insert data from the clipboard into an application",
+                    "Cut","Copy", "Paste","Paste"}, //29
+
+            {"A telecommunications application software product that specializes in providing video chat and voice calls between computers.",
+                    "Skype","Message", "facebook","Skype"},  //30
+
+            {"An anti-malware component of Microsoft Windows.",
+                    "Windows","Windows defender", "Windows firewall","Windows defender"}, //31
+
+            {"a web-based suite of webmail, contacts, tasks, and calendaring services from Microsoft.",
+                    "MS Outlook","MS ONENOTE", "MS word","MS Outlook"}, //32
+
+            {"an entry-level desktop publishing application from Microsoft",
+                    "MS Outlook","MS ONENOTE", "MS Publisher","MS Publisher"}, //33
+
+            {"A vector graphics editor developed and marketed by Adobe Systems.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Photoshop","Adobe Illustrator"}, //34
+
+            {"Viewing, organizing and editing large numbers of digital images.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Lightroom","Adobe Lightroom"}, //35
+
+            {"View, create, manipulate, print and manage files in Portable Document Format. ",
+                    "Adobe illustrator","Adobe Lightroom", "Adobe Acrobat","Adobe Acrobat"}, //36
+
+            {"a digital visual effects, motion graphics, and compositing application developed by Adobe",
+                    "Adobe lightroom","Adobe After effects", "Adobe Photoshop","Adobe After effects"}, //37
+
+            {"A timeline-based video editing app developed by Adobe ",
+                    "Windows movie maker","VLC player", "Adobe Premiere pro","Adobe Premiere pro"}, //38
+
+            {"an integrated suite of storytelling applications for the mobile and web developed by Adobe Systems. ",
+                    "Adobe spark","Adobe lightroom", "Adobe illustrator","Adobe spark"}, //39
+
+            {"a multimedia authoring and computer animation program developed by Adobe ",
+                    "Adobe spark","Adobe Animate", "Adobe illustrator","Adobe Animate"}, //40
+
+    };
+
+    public String getTex4Questions(int a){
+        String question = Techex4Questions[a][0];
+        return question;
+    }
+    public String getTex4Choice1(int a){
+        String choice1 = Techex4Questions[a][1];
+        return choice1;
+    }
+    public String getTex4Choice2(int a){
+        String choice2 = Techex4Questions[a][2];
+        return choice2;
+    }
+    public String getTex4Choice3(int a){
+        String choice3 = Techex4Questions[a][3];
+        return choice3;
+    }
+    public String getTex4Answer(int a){
+        String answer = Techex4Questions[a][4];
+        return answer;
+    }
+
+
+    private String Techex5Questions [][]= {
+
+
+            {"A series of graphical web browsers developed by Microsoft ",
+                    "Firefox","Chrome", "Explorer","Explorer"}, //1
+
+            {" It is a hardware device used to maintain a voltage to electronic devices.",
+                    " mouse ", " monitor ", " computer AVR "," computer AVR "}, //2
+
+            {" it is a small electronic device that is used for storing and transferring files.",
+                    " Flash drive ", " Monitor ", " Mouse "," Flash drive "}, //3
+
+            {" it is a video camera that is connected to a computer and can record videos and capture photos",
+                    " Web Camera ", " Monitor ", " Cellphone "," Web Camera "}, //4
+
+            {" it is a small surface  that provides a better movement for your mouse ",
+                    " keyboard ", "Mouse", " Mousepad "," Mousepad "}, //5
+            {"A web browser developed by Apple based on the WebKit engine. ",
+                    "Safari","Chrome", "Firefox","Safari"}, //6
+
+            {"A wireless technology standard for exchanging data over short distances from fixed and mobile devices",
+                    "signal","Bluetooth", "wifi","Bluetooth"}, //7
+
+            {"A graphical operating systems developed and marketed by Apple",
+                    "MacOS","Windows", "Linux","MacOS"}, //8
+
+            {"A free advertising-supported email service developed by Google.",
+                    "Yahoo", "Gmail", "Messenger","Gmail"},  //9
+
+            {"A file storage and synchronization service developed by Google.",
+                    "Google storage","Google drive", "Google diary","Google drive"}, //10
+
+            {"A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.",
+                    "Firewall","Firebrick", "firesquare","Firewall"}, //11
+
+            {"A web mapping service developed by Google",
+                    "Google map","google point", "google location","Google map"}, //12
+
+            {"A raster graphics editor developed and published by Adobe",
+                    "Photoshop","notepad", "paint","Photoshop"}, //13
+
+            {"A process for reproducing text and images using a master form or template.",
+                    "Copy","Scan", "Print","Print"}, //14
+
+            {"A process that optically scans images, printed text, handwriting or an object and converts it to a digital image.",
+                    "Copy","Scan", "Print","Scan"}, //15
+
+            {"Removes the item from its current location and places it into the clipboard",
+                    "Cut", "Copy","Paste","Cut"}, //16
+
+            {" C_PS L_ _K "," A-O-C "," A-U-L", " A-O-L "," A-O-C "}, //17
+
+            {" PR_N_ SC_EEN "," I-T-R "," A-O-R", " I-R-T"," I-T-R "}, //18
+
+            {" PA_S_ B_EAK "," O-E-R "," U-S-E ", " U-E-R"," U-E-R"}, //19
+
+            {" E_CA_ _"," S-P-E ", " S-P-O ", " C-P-E "," S-P-E "},  //20
+
+            {" L_SS T_A_"," E-H-N "," E-H-A ", " O-U-T "," E-H-N "}, //21
+
+            {" G_EAT_R TH_N "," U-G-H "," R-E-A ", " P-N-C "," R-E-A "}, //22
+
+            {" E_U_ _L_"," G-U-P "," U-L-P ", " Q-A-S "," Q-A-S "}, //23
+
+            {" P_US ","L","R", "P","L"}, //24
+
+            {" S_L_C_"," E-E-T "," E-U-T ", " B-O-I"," E-E-T "}, //25
+            {"A vector graphics editor developed and marketed by Adobe Systems.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Photoshop","Adobe Illustrator"}, //26
+
+            {"Viewing, organizing and editing large numbers of digital images.",
+                    "Adobe Air","Adobe Illustrator", "Adobe Lightroom","Adobe Lightroom"}, //27
+
+            {"View, create, manipulate, print and manage files in Portable Document Format. ",
+                    "Adobe illustrator","Adobe Lightroom", "Adobe Acrobat","Adobe Acrobat"}, //28
+            {"a surface for placing and moving a computer mouse.",
+                    "Mouse", "Wood", "Mousepad","Mousepad"}, //29
+
+            {"Used to differentiate between the computer itself and its peripheral devices, such as the keyboard, mouse and monitor.",
+                    "System Unit", "Processor", "RAM","System Unit"}, //4
+
+            {"A hardware device that connects to a computer to generate sound. ",
+                    "Scanner", "Microphone", "Speaker","Speaker"}, //5
+            {"A hand-held pointing device that detects two-dimensional motion relative to a surface.",
+                    "Trackball", "Mouse", "Printer","Mouse"}, //6
+
+    };
+
+    public String getTex5Questions(int a){
+        String question = Techex5Questions[a][0];
+        return question;
+    }
+    public String getTex5Choice1(int a){
+        String choice1 = Techex5Questions[a][1];
+        return choice1;
+    }
+    public String getTex5Choice2(int a){
+        String choice2 = Techex5Questions[a][2];
+        return choice2;
+    }
+    public String getTex5Choice3(int a){
+        String choice3 = Techex5Questions[a][3];
+        return choice3;
+    }
+    public String getTex5Answer(int a){
+        String answer = Techex5Questions[a][4];
+        return answer;
+    }
+    }

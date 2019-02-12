@@ -37,13 +37,14 @@ public class English2 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english2);
-
+//        quiz = MediaPlayer.create(English2.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
         nextQuestion();
@@ -212,7 +213,7 @@ public class English2 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(English2.this);
 
         alertDialog.setTitle("Learning Objective: ");
-        alertDialog.setMessage("By the end of this level, the children are expected to identify ryhming words.\n");
+        alertDialog.setMessage("Hello there, by the end of this level you are expected to identify ryhming words.\n");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

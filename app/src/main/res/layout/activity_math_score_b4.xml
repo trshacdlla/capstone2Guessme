@@ -20,8 +20,15 @@
             android:id="@+id/M4G1Congrats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Congratulation!!!"
-            android:layout_marginTop="50dp"
+            android:text="Congratulations!!"
+            android:shadowColor="#cf1d1d"
+            android:shadowDx="4.0"
+            android:shadowDy="4.0"
+            android:shadowRadius="50"
+            android:textColorHighlight="#ff0000"
+            android:textColor="#04155c"
+
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="40dp" />
         <TextView

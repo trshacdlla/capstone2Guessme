@@ -37,13 +37,14 @@ public class English4 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english4);
-
+//        quiz = MediaPlayer.create(English4.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
         nextQuestion();

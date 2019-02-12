@@ -430,9 +430,12 @@ public class MathQuestions {
         R.drawable.mb5,
         R.drawable.mb6,
         R.drawable.mb7,
-        R.drawable.mb8,
-        R.drawable.mb9,
-        R.drawable.mb10
+        R.drawable.mb11,
+        R.drawable.mb12,
+        R.drawable.mb13,
+        R.drawable.mb14,
+        R.drawable.mb15,
+        R.drawable.mb16
         );
 
 private String M1G1Choices [][]= {
@@ -443,9 +446,12 @@ private String M1G1Choices [][]= {
         {"Four(4)", "Six(6)", "One(1)", "Six(6)"},
         {"Two(2)", "Five(5)", "Seven(7)", "Five(5)"},
         {"Three(3)", "Four(4)", "Five(5)", "Three(3)"},
-        {"Seven(7)", "Eight(8)", "One(1)", "Seven(7)"},
-        {"Seven(7)", "Ten(10)", "One(1)", "Seven(7)"},
-        {"Four(4)", "Two(2)", "Ten(10)", "Ten(10)"}
+        {"Fourteen(14)", "Twelve(12)", "Ten(10)", "Twelve(12)"},
+        {"Four(4)", "Two(2)", "Three(3)", "Three(3)"},
+        {"One(1)", "Two(2)", "Ten(10)", "One(1)"},
+        {"Fourteen(14)", "Twenty(20)", "Ten(10)", "Fourteen(14)"},
+        {"Nine(9)", "Eight(8)", "Ten(10)", "Eight(8)"},
+        {"Eleven(11)", "Sixteen(16)", "Ten(10)", "Eleven(11)"}
 
 };
 
@@ -504,9 +510,16 @@ private String M1G1Choices [][]= {
 
             {"4__6","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"}, //13
 
-            {"7___9","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"}, //14
+            {"10__25","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"},
 
-            {"8___5","GREATER THAN(>)", "LESS THAN(<)", "GREATER THAN(>)"} //15
+            {"13__15","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"},
+
+            {"4__16","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"},
+
+            {"19__26","GREATER THAN(>)", "LESS THAN(<)", "LESS THAN(<)"},
+
+            {"11___5","GREATER THAN(>)", "LESS THAN(<)", "GREATER THAN(>)"},
+
 
 
     };
@@ -544,12 +557,6 @@ private String M1G1Choices [][]= {
 
             {" 7+2", " NINE ", " FIVE "," TEN ", " NINE "},//5
 
-            {"7+3", " Ten ", " Five "," Eight"," Ten "}, //6
-
-            {"5+4", " Nine ", " Four "," One "," Nine "}, //7
-
-            {"7+3", " Ten ", " Seven "," Two "," Ten "}, //8
-
             {"4+4", " seven ", " Eight "," One ", " Eight "}, //9
 
             {"7+5", " Twelve ", " Ten "," Nine ", " Twelve "}, //10
@@ -572,7 +579,19 @@ private String M1G1Choices [][]= {
 
             {"6+6", " Seventeen ", " twelve "," two ", " twelve " }, //19
 
-            {"5+6", " Seventeen ", " twelve "," eleven ", " eleven " }, //20
+            {"5+6", " Seventeen ", " twelve "," eleven ", " eleven " } ,//20
+
+            {"15+5", " Twenty ", " twelve "," eleven ", " Twenty " },
+
+            {"9+6", " Seventeen ", " Fifteen "," eleven ", " Fifteen " },
+
+            {"9+5", " Eighteen ", " twelve "," Fourteen ", " Fourteen " },
+
+            {"8+8", " Eighteen ", " Sixteen "," Fourteen ", " Sixteen " },
+
+            {"9+8", " Eighteen ", " twelve "," Seventeen ", " Seventeen " },
+
+
     };
 
     public String getM3G1Questions(int a){
@@ -645,6 +664,14 @@ private String M1G1Choices [][]= {
             {"11+29","40 ", "25 ", "60","40 "}, //20
 
             {"12+12","24 ", "25 ", "18","24 "}, //20
+
+            {"21+47","68 ", "55 ", "46","68 "},
+
+            {"41+4","64 ", "45 ", "48","45 "},
+
+            {"21+32","53 ", "55 ", "51","53 "},
+
+            {"10+24","34 ", "35 ", "38","34 "},
     };
 
     public String getM4G1Questions(int a){
@@ -754,5 +781,332 @@ private String M1G1Choices [][]= {
         String answer = M5G1Questions[a][4];
         return answer;
     }
+
+    private String MathE1Questions [][]= {
+            {"2,__,6,8,10","3", "4", "5","4"},
+            {"1,__,5,7,9","2", "4", "3","3"},
+            {"3,6,__,12,15", "9","8", "7", "9"},
+            {"1,4,__,10,13","7", "4", "6","7"},
+            {"3, _, 9, 10","11", "6", "2","6"},
+            {"2,__,8,11,14","4", "5", "3","5"},
+            {"__,6,9,12,15","2", "4", "3", "3"},
+            {"2,4,6,__,10","7", "8", "5","8"},
+            {"4,8,12,__,20","14", "16", "13","16"},
+            {"_, 4, 6, 8, 10","2", "5", "3","2"}
+
+    };
+
+    public String getME1Questions(int a){
+        String question = MathE1Questions[a][0];
+        return question;
+    }
+
+    public String getME1Choice1(int a){
+        String choice1 = MathE1Questions[a][1];
+        return choice1;
+    }
+
+    public String getME1Choice2(int a){
+        String choice2 = MathE1Questions[a][2];
+        return choice2;
+    }
+
+    public String getME1Choice3(int a){
+        String choice3 = MathE1Questions[a][3];
+        return choice3;
+    }
+
+    public String getME1Answer(int a){
+        String answer = MathE1Questions[a][4];
+        return answer;
+    }
+    private List<Integer> ME2Questions = Arrays.asList(
+            R.drawable.me21,
+            R.drawable.me22,
+            R.drawable.me23,
+            R.drawable.me24,
+            R.drawable.me25,
+            R.drawable.me26,
+            R.drawable.me27,
+            R.drawable.me28,
+            R.drawable.me29,
+            R.drawable.me210,
+            R.drawable.me211,
+            R.drawable.me212,
+            R.drawable.me213,
+            R.drawable.me214,
+            R.drawable.me215
+    );
+
+    private String ME2Choices [][]= {
+            {"11:30", "10:30", "9:30", "11:30"}, //1
+            {"10:30", "8:30", "9:30", "9:30"}, //2
+            {"5:00", "6:00", "7:00", "6:00"}, //3
+            {"1:00", "10:30", "2:00", "1:00"},  //4
+            {"1:00", "11:00", "12:00", "11:00"}, //5
+            {"2:30", "4:30", "3:30", "2:30"}, //6
+            {"1:30", "2:30", "3:30", "11:30"}, //7
+            {"7:00", "8:00", "9:00", "8:00"}, //8
+            {"4:00", "3:00", "5:00", "4:00"}, //9
+            {"3:40", "1:40", "2:40", "2:40"}, //10
+            {"11:30", "11:45", "11:35", "11:45"}, //11
+            {"3:30", "3:20", "3:25", "3:25"}, //12
+            {"7:00", "8:00", "9:00", "9:00"}, //13
+            {"1:30", "12:30", "2:30", "1:30"}, //14
+            {"7:00", "5:00", "6:00", "5:00"}, //15
+
+
+
+
+
+    };
+
+
+    public Integer getME2Questions(int a){
+        Integer question = ME2Questions.get(a);
+        return question;
+    }
+
+    public String getME2Choice1(int a){
+        String choice1 = ME2Choices[a][0];
+        return choice1;
+    }
+
+    public String getME2Choice2(int a){
+        String choice2 = ME2Choices[a][1];
+        return choice2;
+    }
+
+    public String getME2Choice3(int a){
+        String choice3 = ME2Choices [a][2];
+        return choice3;
+    }
+
+    public String getME2Answer(int a){
+        String answer = ME2Choices [a][3];
+        return answer;
+    }
+
+    private String MathE3Questions [][]= {
+            {"I","3", "1", "5","1"},
+            {"II","2", "4", "3","2"},
+            {"III", "3","8", "7", "3"},
+            {"IV","3", "4", "6","4"},
+            {"V","5", "6", "2","5"},
+            {"VI","4", "5", "6","6"},
+            {"VII","9", "4", "8", "7"},
+            {"VIII","9", "4", "8", "8"},
+            {"IX","7", "8", "5","9"},
+            {"X","12", "10", "13","10"},
+            {"XI","12", "15", "11","11"},
+            {"XII","12", "15", "11","12"},
+            {"XIII","12", "13", "11","13"},
+            {"XIV","14", "15", "11","14"},
+            {"XV","17", "15", "11","15"},
+            {"XVI","12", "15", "16","16"},
+            {"XVII","12", "17", "18","17"},
+            {"XVIII","18", "19", "17","18"},
+            {"XIX","18", "19", "21","19"},
+            {"XX","23", "11", "20","20"},
+    };
+
+    public String getME3Questions(int a){
+        String question = MathE3Questions[a][0];
+        return question;
+    }
+
+    public String getME3Choice1(int a){
+        String choice1 = MathE3Questions[a][1];
+        return choice1;
+    }
+
+    public String getME3Choice2(int a){
+        String choice2 = MathE3Questions[a][2];
+        return choice2;
+    }
+
+    public String getME3Choice3(int a){
+        String choice3 = MathE3Questions[a][3];
+        return choice3;
+    }
+
+    public String getME3Answer(int a){
+        String answer = MathE3Questions[a][4];
+        return answer;
+    }
+
+    private String ME4Questions [][]= {
+
+            {"1*3"," 4 ", " 2", "3 "," 3 "}, //1
+
+            {"9 * 3"," 27 ", " 18 ", " 19 "," 27 "}, //2
+
+            {" 15+14"," 25 ", " 29 ", " 35"," 29 "}, //3
+
+            {" 26+10"," 38 "," 36 ", " 10"," 36 "}, //4
+
+            {"35+15 "," 50 "," 40 ", " 60"," 50 "}, //5
+
+            {"29+17 ","45 ","46 ", "50 ","46 "}, //6
+
+            {"45+54"," 85 ","115 ", " 99 "," 99 "}, //7
+
+            {"90+ 20"," 190 ","110 ", " 78","110 "}, //8
+
+            {"25 * 25","365 ","548 ", "625 ","625 "}, //9
+
+            {"82-14 ","68 ","54 ", "71 ","68 "}, //10
+
+            {"190-84 ","95 ","106 ", "110 ","106 "}, //11
+
+            {"69+14","67 ","83 ", "98","83 "}, //12
+
+            {"10+15","23 ","18 ", "25 ","25 "}, //13
+
+            {"28-13","15 ","13 ", "10","15 "}, //14
+
+            {"_ * 10= 10 "," 1 "," 10 ", "2"," 1 "}, //15
+
+            {"_ * 8= 8"," 3 "," 1 ", " 2"," 1 "}, //16
+
+            {"_ * 13= 36","1 ","2 ", "4","2 "}, //17
+
+            {"54+37 ","78 ","91 ", "45 ","91 "}, //18
+
+            {"93+5","100 ","96 ", "98 ","98 "}, //19
+
+            {"55-22","21 ", "23 ", "33 ","33 "}, //20
+
+            {"45+45","90 ", "80 ", "60","90 "}, //21
+
+            {"43-13","23 ", "30 ", "34","30 "}, //22
+
+            {"46+64","74 ", "110 ", "115","110 "}, //23
+
+            {"11*20","240 ", "220 ", "160","220 "}, //24
+
+            {"12 * 10","124 ", "121 ", "120 ","120 "}, //25
+    };
+
+    public String getME4Questions(int a){
+        String question = ME4Questions[a][0];
+        return question;
+    }
+
+    public String getME4Choice1(int a){
+        String choice1 = ME4Questions[a][1];
+        return choice1;
+    }
+    public String getME4Choice2(int a){
+        String choice2 = ME4Questions[a][2];
+        return choice2;
+    }
+    public String getME4Choice3(int a){
+        String choice3 = ME4Questions[a][3];
+        return choice3;
+    }
+    public String getME4Answer(int a){
+        String answer = ME4Questions[a][4];
+        return answer;
+    }
+    private String ME5Questions [][]= {
+
+            {"1*3"," 4 ", " 2", "3 "," 3 "}, //1
+
+            {"9 * 3"," 27 ", " 18 ", " 19 "," 27 "}, //2
+
+            {" 15+14"," 25 ", " 29 ", " 35"," 29 "}, //3
+
+            {" 26+10"," 38 "," 36 ", " 10"," 36 "}, //4
+
+            {"35+15 "," 50 "," 40 ", " 60"," 50 "}, //5
+
+            {"29+17 ","45 ","46 ", "50 ","46 "}, //6
+
+            {"45+54"," 85 ","115 ", " 99 "," 99 "}, //7
+
+            {"90+ 20"," 190 ","110 ", " 78","110 "}, //8
+
+            {"25 * 25","365 ","548 ", "625 ","625 "}, //9
+
+            {"82-14 ","68 ","54 ", "71 ","68 "}, //10
+
+            {"190-84 ","95 ","106 ", "110 ","106 "}, //11
+
+            {"69+14","67 ","83 ", "98","83 "}, //12
+
+            {"10+15","23 ","18 ", "25 ","25 "}, //13
+
+            {"28-13","15 ","13 ", "10","15 "}, //14
+            {"1,4,__,10,13","7", "4", "6","7"},
+
+            {"3, _, 9, 10","11", "6", "2","6"},
+
+            {"2,__,8,11,14","4", "5", "3","5"},
+
+            {"54+37 ","78 ","91 ", "45 ","91 "}, //18
+
+            {"93+5","100 ","96 ", "98 ","98 "}, //19
+
+            {"55-22","21 ", "23 ", "33 ","33 "}, //20
+
+            {"45+45","90 ", "80 ", "60","90 "}, //21
+
+            {"43-13","23 ", "30 ", "34","30 "}, //22
+
+            {"46+64","74 ", "110 ", "115","110 "}, //23
+
+            {"11*20","240 ", "220 ", "160","220 "}, //24
+
+            {"12 * 10","124 ", "121 ", "120 ","120 "}, //25
+            {"78-78","0", "1", "2","0"}, //18
+
+            {"971*1","1", "971", "0","971"}, //19
+
+            {"79÷1","79", "0", "1","79"},  //20
+
+            {"316+645+102","1063", "1054", "1003","1063"}, //21
+
+            {"794-547","214", "247", "234","247"}, //22
+
+            {"947*0","0", "1", "947","0"}, //23
+
+            {"100÷5","5", "10", "20","20"}, //24
+
+            {"164+154+451","769", "764", "749","769"}, //25
+
+            {"254-150","130", "104", "102","104"}, //26
+
+            {"15*10","150", "15", "105","150"}, //27
+
+            {"99÷9","9", "10", "11","11"}, //28
+
+            {"214+143+14","371", "341", "316","371"}, //29
+
+            {"541-341","200", "150", "41","200"},  //30
+    };
+
+    public String getME5Questions(int a){
+        String question = ME5Questions[a][0];
+        return question;
+    }
+
+    public String getME5Choice1(int a){
+        String choice1 = ME5Questions[a][1];
+        return choice1;
+    }
+    public String getME5Choice2(int a){
+        String choice2 = ME5Questions[a][2];
+        return choice2;
+    }
+    public String getME5Choice3(int a){
+        String choice3 = ME5Questions[a][3];
+        return choice3;
+    }
+    public String getME5Answer(int a){
+        String answer = ME5Questions[a][4];
+        return answer;
+    }
+
 
 }

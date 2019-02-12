@@ -27,7 +27,7 @@ public class EnglishIScore2 extends AppCompatActivity {
     Button retry,next,stat;
     int correct =0;
     int incorrect =0;
-    int totalquestion = 10;
+    int totalquestion = 15;
     int trials =1;
     int percent;
     String Next = "Next";

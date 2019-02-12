@@ -15,6 +15,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.guessme.guessme.Agreement.mix;
+
 public class MainMenu extends AppCompatActivity{
 
     Button play,tnc,scores,exit;
@@ -70,8 +72,10 @@ public class MainMenu extends AppCompatActivity{
             @Override
             public void onClick(View v) {
 
+
                     Intent i = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(i);
+//                    bgmusic.stop();
                     finish();
 
 
@@ -108,7 +112,7 @@ public class MainMenu extends AppCompatActivity{
                         .setCancelable(false)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Agreement.bgmusic.stop();
+                                mix.stop();
                                 finish();
                                 System.exit(0);
                             }

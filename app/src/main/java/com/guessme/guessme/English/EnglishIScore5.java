@@ -27,7 +27,7 @@ public class EnglishIScore5 extends AppCompatActivity {
     Button retry,next,stat;
     int correct =0;
     int incorrect =0;
-    int totalquestion = 10;
+    int totalquestion = 30;
     int trials =1;
     int percent;
     String Next = "Next";
@@ -177,7 +177,7 @@ public class EnglishIScore5 extends AppCompatActivity {
                             }
                         }else{
                         }
-                        Intent i = new Intent(getApplicationContext(),EnglishI1.class);
+                        Intent i = new Intent(getApplicationContext(),EnglishEx1.class);
                         startActivity(i);
                         finish();
 

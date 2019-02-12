@@ -13,11 +13,11 @@
         android:id="@+id/trivia"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="It is impossible for most people to lick their own elbow. (try it!)"
-        android:textColor="#000"
-        android:textSize="25dp"
         android:layout_marginTop="100dp"
-        />
+        android:textStyle="bold"
+        android:text="It is impossible for most people to lick their own elbow. (try it!)"
+        android:textColor="@color/colorAccent"
+        android:textSize="29dp" />
 
     <Button
         android:id="@+id/Trivia7Back"

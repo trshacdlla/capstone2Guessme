@@ -17,22 +17,28 @@
 
 
         <TextView
-            android:id="@+id/MT2Congrats"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Congratulation!!!"
-            android:textAlignment="center"
-            android:textSize="30dp" />
-        <TextView
             android:id="@+id/MT2name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_marginTop="30dp"
             android:text="name"
             android:textAlignment="center"
             android:textSize="30sp" />
 
+        <TextView
+            android:id="@+id/MT2Congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Congratulations!!"
+            android:shadowColor="#1d64cf"
+            android:shadowDx="4.0"
+            android:shadowDy="4.0"
+            android:shadowRadius="50"
+            android:textColor="#3dc5ff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30dp" />
 
 
         <TextView

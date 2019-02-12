@@ -232,8 +232,8 @@ public class ScienceI3 extends AppCompatActivity {
     public void dialog(){
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceI3.this);
 
-        alertDialog.setTitle("Direction:");
-        alertDialog.setMessage("Choose the correct answer");
+        alertDialog.setTitle("Leaning objectives:");
+        alertDialog.setMessage("On this level, you will classify the different animals and its own habitat");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

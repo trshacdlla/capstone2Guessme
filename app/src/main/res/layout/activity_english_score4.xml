@@ -28,7 +28,14 @@
             android:id="@+id/ET4Congrats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Congratulation!!!"
+
+            android:textStyle="bold"
+            android:text="Congratulations!!"
+            android:shadowColor="#003d7b"
+            android:shadowDx="2.0"
+            android:shadowDy="4.0"
+            android:shadowRadius="50"
+            android:textColor="#3db1ff"
             android:textAlignment="center"
             android:textSize="30dp" />
 

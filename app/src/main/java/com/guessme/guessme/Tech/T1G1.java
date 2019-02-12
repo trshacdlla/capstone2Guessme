@@ -217,7 +217,7 @@ public class T1G1 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(T1G1.this);
 
         alertDialog.setTitle("Learning objective:");
-        alertDialog.setMessage("The children will become more familiarized to the different types of computer hardware.\n");
+        alertDialog.setMessage("Hello! In this level, you will become more familiarized to the different types of computer hardware.\n");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

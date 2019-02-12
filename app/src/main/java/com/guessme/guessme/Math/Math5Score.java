@@ -137,7 +137,7 @@ public class Math5Score extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (next.getText() == Next) {
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent i = new Intent(getApplicationContext(), MathE1.class);
                         startActivity(i);
                         Math5Score.this.finish();
 

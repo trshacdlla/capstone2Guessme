@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.guessme.guessme.Tech.Tech2"
     android:weightSum="1"
-    android:background="@drawable/techo2">
+    android:background="@drawable/bgtech2">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,6 +31,7 @@
 
 
     </LinearLayout>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -41,35 +42,25 @@
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
             android:text="         1"
             android:textColor="#000"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_weight="1"
-            android:text="Level 1"
-            android:textAlignment="center"
-            android:textColor="#000"
-            android:textSize="35sp"
-            android:visibility="invisible" />
-        <TextView
             android:id="@+id/t2score"
             android:layout_width="41dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textSize="25sp"
-            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
             android:layout_marginEnd="47dp"
             android:layout_weight="1"
             android:text="  0"
             android:textColor="#000"
-            android:textStyle="bold"/>
+            android:textSize="25sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <TextView

@@ -181,7 +181,7 @@ public class EnglishI4 extends AppCompatActivity {
             startActivity(i);
             finish();
         } else {
-            questionNumber.setText(ei4QuestionNum + 1 + "/20 ");
+            questionNumber.setText(ei4QuestionNum + 1 + "/25 ");
             Random generator = new Random();
             int number = generator.nextInt(randomlist.size());
             randomnum = randomlist.get(number);

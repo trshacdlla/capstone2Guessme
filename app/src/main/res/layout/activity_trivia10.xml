@@ -13,11 +13,10 @@
         android:id="@+id/trivia"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="'Dreamt' is the only English word that ends in the letters 'mt'."
-        android:textSize="25dp"
-        android:textColor="#000"
         android:layout_marginTop="100dp"
-        />
+        android:text="'Dreamt' is the only English word that ends in the letters 'mt'."
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/Trivia10Back"

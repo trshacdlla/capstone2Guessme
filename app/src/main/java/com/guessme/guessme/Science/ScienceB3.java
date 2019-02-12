@@ -44,13 +44,14 @@ public class ScienceB3 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-//    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_b3);
-
+//        quiz = MediaPlayer.create(ScienceB3.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
         nextQuestion();

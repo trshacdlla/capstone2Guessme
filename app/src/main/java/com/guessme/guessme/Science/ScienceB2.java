@@ -43,13 +43,14 @@ public class ScienceB2 extends AppCompatActivity {
     private int trials=1;
 
     private Vibrator vibe;
-//    static MediaPlayer bgmusic;
+//   static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_b2);
-
+//        quiz = MediaPlayer.create(ScienceB2.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
 //        startTimer();
@@ -228,7 +229,7 @@ public class ScienceB2 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceB2.this);
 
         alertDialog.setTitle("Learning Objective:");
-        alertDialog.setMessage("Children will be able to identify and describe the five senses.");
+        alertDialog.setMessage("Hi, you can identify the non living and living things at the end of this level.");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

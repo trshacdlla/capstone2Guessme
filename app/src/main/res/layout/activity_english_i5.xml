@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.guessme.guessme.English.English5"
     android:weightSum="1"
-    android:background="@drawable/eng5">
+    android:background="@drawable/e5">
 
     <LinearLayout
         android:layout_width="wrap_content"

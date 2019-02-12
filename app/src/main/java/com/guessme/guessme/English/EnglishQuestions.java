@@ -16,14 +16,19 @@ public class EnglishQuestions {
     private String English1Questions [][]= {
             {" Clara ___ my best friend ","is", "am", "are","is"},
             {" I ___ an honest boy ","is", "am", "are","am"},
-            {" My toy robots ___ in the box ","is", "am", "are","are"},
-            {" We ___ from China ","is", "am", "are","are"},
             {" Our dog ___ two years old ","is", "am", "are","is"},
             {" You ___ tall and strong.","is", "am", "are","are"},
             {" My father ___ a doctor ","is", "am", "are","is"},
             {" They ___ my parents ","is", "am", "are","are"},
             {" Joey and I ___ good students","is", "am", "are","are"},
-            {" My dog ___ so big. ","is", "am", "are","is"}
+            {" My dog ___ so big. ","is", "am", "are","is"},
+            {"  ___ you okay Steve? ","is", "am", "are","are"},
+            {" I ___ leaving the town on Saturday ","is", "am", "are","am"},
+            {" ___ everyone on our class will participate on the activity? ","is", "am", "are","is"},
+            {" ___ it good to eat vegetables? ","is", "am", "are","is"},
+            {"___ I a good guitarist? ","is", "am", "are","am"},
+            {" ___ Riko alright? ","is", "am", "are","is"}
+
     };
 
     public String getE1Questions(int a){
@@ -68,7 +73,11 @@ public class EnglishQuestions {
             {" Dig - pig ","Yes", "No","Yes"}, //12
             {" Walk - run ","Yes", "No","No"}, //13
             {" Top - rope ","Yes", "No","No"}, //14
-            {" Chip - dip ","Yes", "No","Yes"} //15
+            {" Chip - dip ","Yes", "No","Yes"}, //15
+            {" Deer - Beer ","Yes", "No","Yes"}, //15
+            {" Rain - Pain ","Yes", "No","Yes"},
+
+
 //            {" Potato - Tomato ","Yes", "No","Yes"}, //16
 //            {" Time - Shine ","Yes", "No","Yes"}, //17
 //            {" Key - Free ","Yes", "No","Yes"}, //18
@@ -557,7 +566,7 @@ public class EnglishQuestions {
 
             {"(Dodong) ______ fixed his broken bike. ","He", "She ", "They", "He"}, //13
 
-            {"(Vonjo and Angel)_____ will get married soon.","He", "She ", "They", "They"}, //14
+            {"(Vonjo and Angel)_____ will get married soon.","He", "They", "They", "They"}, //14
 
             {"(Precious)_______ got her new toys.","He", "She ", "They",  "She"}, //15
 
@@ -618,7 +627,7 @@ public class EnglishQuestions {
 
             {"Places", "Placed", "Place", " Sand castle ", "Place"}, //46
 
-            {"Wheels", "Heroes", "Hero", " Cake ","Wheel"}, //47
+            {"Wheels", "Heroes", "Wheel", " Cake ","Wheel"}, //47
 
             {"Heroes"," Barney ", " Hero ", " Picked "," Hero "}, //48
 
@@ -816,4 +825,246 @@ public class EnglishQuestions {
         String answer = EnglishI5questions[a][4];
         return answer;
     }
+
+    //expert level 1
+    private String EnglishE1Questions [][]= {
+            {"You accidentally spilled paint on your seatmate's paper.","Ooops, it’s the paint's fault.", "I am sorry for messing up your paper.", "I wasn’t looking.","I am sorry for messing up your paper."},
+            {"Your principal asked you, \"How are you today?\"","I am fine, thank you.", "You're welcome.", "Goodbye.","I am fine, thank you"},
+            {"Your teacher thanked you for helping her erase the writings on the board","It's okay, teacher.", "I am sorry, teacher.", "You're welcome, teacher.","You're welcome, teacher."},
+            {"Mother prepared cookies for snacks.","Mother, may I have some cookies?", "I want some cookies.", "Give me cookies now.","Mother, may I have some cookies?"},
+            {"You want the salt, which is far from where you're sitting.","Give me the salt.", "Could you please pass the salt?", "I want the salt.","Could you please pass the salt?"},
+            {"Which of the following is a noun?","Colorful", "Crayons", "Fantastic","Crayons"},
+            {"Which of the following in NOT a noun?","River", "Forest", "Deep","Deep"},
+            {"Which of the nouns below must be capitalized?","city", "province", "manila","manila"},
+            {"What is the correct common name for the nouns Asia, Africa and Europe?","Continent", "Planet", "City","Continent"},
+            {"All of the nouns below are written correctly except one.","Cebu", "Manila", "Citee","Citee"}
+    };
+
+    public String getEx1Questions(int a){
+        String question = EnglishE1Questions[a][0];
+        return question;
+    }
+
+    public String getEx1Choice1(int a){
+        String choice1 = EnglishE1Questions[a][1];
+        return choice1;
+    }
+
+    public String getEx1Choice2(int a){
+        String choice2 = EnglishE1Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx1Choice3(int a){
+        String choice3 = EnglishE1Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx1Answer(int a){
+        String answer = EnglishE1Questions[a][4];
+        return answer;
+    }
+
+    //expert level 2
+    private String EnglishE2Questions [][]= {
+            {"Which of the following is a mass noun?","Bottle", "Toothpaste", "Umbrella","Toothpaste"},
+            {"Which of the following is a count noun?","Rice", "Sugar", "Newspaper","Newspaper"},
+            {"Which of the following counters can you use for the noun soap?","A tube of soap", "A pack of soap", "A bar of soap","A bar of soap"},
+            {"Mother served a pitcher of ___ and some cookies for the children","Vinegar", "Wine", "Juice","Juice"},
+            {"On the beach, little boys and girls are carrying ___ sand for their sand castle.","packs of", "pails of", "cartons of","pails of"},
+            {"There are only ___ trees left along the highway.","Few", "Many", "Little","Few"},
+            {"I think my coffee has too much ___ because it is too sweet","Salt", "Water", "Sugar","Sugar"},
+            {"Which of the following phrases shows the correct possessive form of nouns?","mens uniform", "men's uniform", "mens' uniform","men's uniform"},
+            {"(The car of my father) Broke down.","My father's car", "My fathers' car", "The car's of my father","My father's car"},
+            {" The ___ is new.","table of the teacher's", "teacher's table", "teachers' table","teacher's table"},
+            {"Which of the following is NOT a correct pair of nouns in the opposite genders?","Husband and wife", "Mister and miss", "King and prince","King and prince"},
+            {"All of the nouns below belong to the common gender except one. which is it?","Stanger", "Child", "Priest","Priest"},
+            {"All of the noun below belongs to the feminine gender except one, which is it?","Sister", "Sibling", "Maiden","Sibling"},
+            {"What do you call the gender of nouns that refers to nonliving things?","common", "natural", "neuter","neuter"},
+            {"All of the nouns below belongs to the masculine gender except one, which is it?", "Gentlemen ", "Uncle","Nun","Nun"}
+    };
+
+    public String getEx2Questions(int a){
+        String question = EnglishE2Questions[a][0];
+        return question;
+    }
+
+    public String getEx2Choice1(int a){
+        String choice1 = EnglishE2Questions[a][1];
+        return choice1;
+    }
+
+    public String getEx2Choice2(int a){
+        String choice2 = EnglishE2Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx2Choice3(int a){
+        String choice3 = EnglishE2Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx2Answer(int a){
+        String answer = EnglishE2Questions[a][4];
+        return answer;
+    }
+
+    //expert level 3
+    private String EnglishE3Questions [][]= {
+            {"Mark told Sarah that the rubber shoes she found were __.","his.", "hes.", "him.","his."},
+            {"Tina, Tony, and I raised funds to buy laboratory set. Now it is finally __.","mine", "theirs", "ours","ours"},
+            {"Is this dog ___, Paolo? I saw it in front of your gate.","your", "yours", "you","yours"},
+            {"Mona and Grade lost their science project. Is this project ___? I found it under my chair.","theirs", "yours", "mine","theirs"},
+            {"This watch is ___. My godparents gave this to me as a Christmas present.","yours", "mine", "ours","mine"},
+            {"That is grandpa's cane. I am sure it is ___ because of its color.","hers", "mine", "his","his"},
+            {"The house beside our house is Angel's. ___ has a swimming pools.","hers", "mine", "ours","hers"},
+            {"From ___ is the package?","who", "whom", "what","whom"},
+            {"___ sang the national anthem earlier?","who", "what", "whom","who"},
+            {"To ___ will you send that email?", "who", "whom", "where", "whom"},
+            {"For ___ are those vitamins?","who", "whom", "whose","whom"},
+            {"___ did you vote for as president of the student council?","who", "whom", "whose","who"},
+            {"___ is the next reporter?","who", "whose", "whom","who"},
+            {"To ___ will you give the last slice of pizza?","who", "whom", "whose","whom"},
+            {"I will", "I'll ", "ill","i'will","I'll"},
+            {"You are","Youa're", "You're", "Youre","You're"},
+            {"They are","Theyre", "They're", "The're","They're"},
+            {"It is","I'ts", "Its", "It's","It's"},
+            {"They have","They've", "Theyve", "The've","They've"},
+            {"We would", "We'ld ", "We woul'd","We'd","We'd"}
+    };
+
+    public String getEx3Questions(int a){
+        String question = EnglishE3Questions[a][0];
+        return question;
+    }
+
+    public String getEx3Choice1(int a){
+        String choice1 = EnglishE3Questions[a][1];
+        return choice1;
+    }
+
+    public String getEx3Choice2(int a){
+        String choice2 = EnglishE3Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx3Choice3(int a){
+        String choice3 = EnglishE3Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx3Answer(int a){
+        String answer = EnglishE3Questions[a][4];
+        return answer;
+    }
+
+    //expert level 4
+    private String EnglishE4Questions [][]= {
+            {"The garbage truck WILL COLLECT the trash tomorrow.","Past", "Future", "Present","Future"},
+            {"My parents TRAVELED to Japan last year.","Future", "Present", "Past","Past"},
+            {"Our school HELD a tree-planting activity yesterday.","Past", "Future", "Present","Past"},
+            {"The varsity players WILL PRACTICE for the competition this weekend.","Past", "Future", "Present","Future"},
+            {"I WILL VISIT my relatives in the US this Christmas.","Future", "Present", "Past","Future"},
+            {"Jessica ___ her project to school yesterday","bring", "bringed", "brought","brought"},
+            {"The late pupil politely ___ to his adviser.","spoked", "speaked ", "spoke","spoke"},
+            {"My mother ___ me some nursery rhymes when I was little.","teach", "taught", "teached","taught"},
+            {"We ___ in the pool an hour ago.","swam", "swimmed", "swimming","swam"},
+            {"I ___ the store was closed when I went there earlier", "thought", "thinks", "thinking", "thought"},
+            {"The rain ___ hard last night while I was sleeping.","falling", "falled", "fell","fell"},
+            {"The father ___ some donuts for me.","buy", "buyed", "bought","bought"},
+            {"The saleslady ___ the items inside the paper bag.","putting", "put", "putted","put"},
+            {"The doctor ___ at the clinic soon.","will arrived", "will arrive", "arrives","will arrive"},
+            {"The students ___ their research work in an hour.", "will finished", "will finish","finish","will finish"},
+            {"My family ___ my grandfather's farm in Quezon next vacation.","will visit", "will visited", "visit","will visit"},
+            {"I ___ the national anthem on Monday.","am going to sing", "is going to sing", "sing","am going to sing"},
+            {"Mary Ann says she ___ sandwiches for the party.","will brought", "will bring", "bring","will bring"},
+            {"The Ramos family ___ their dinner at a restaurant tonight.","will had", "will have", "have had","will have"},
+            {"The gardener ___ the tall grass in the school garden later.", "will trimmed", "will trim","trim","will trim"},
+            {"I ___ a lot of questions after the class.","will asked", "will ask", "asks","will ask"},
+            {"Zack ___ a letter to him on Monday.","will send", "will sent", "sent","will send"},
+            {"Tomorrow, we ___ to the aquarium for our field trip.","will go", "gone", "went","will go"},
+            {"The band ___ next week.","will play", "will played", "plays","will play"},
+            {"We __ to the mall on Sunday after mass.", "will goes", "will go","gone","will go"}
+    };
+
+    public String getEx4Questions(int a){
+        String question = EnglishE4Questions[a][0];
+        return question;
+    }
+
+    public String getEx4Choice1(int a){
+        String choice1 = EnglishE4Questions[a][1];
+        return choice1;
+    }
+
+    public String getEx4Choice2(int a){
+        String choice2 = EnglishE4Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx4Choice3(int a){
+        String choice3 = EnglishE4Questions[a][3];
+        return choice3;
+    }
+
+    public String getEx4Answer(int a){
+        String answer = EnglishE4Questions[a][4];
+        return answer;
+    }
+
+    //expert level 5
+    private String EnglishE5Questions [][]= {
+            {"The priest speaks ___.","gently", "gentle","gently"},
+            {"A mother's _______ touch gives relief to a sick child.","gentle", "gently","gentle"},
+            {"The ___ voices of the children's choir are music to my ears.","soft", "softly","soft"},
+            {"The choir sang ___ when the piano was played.","softly", "soft","softly"},
+            {"The concert was a __ show.","good", "well", "good"},
+            {"The performers did ___ in their numbers.","well", "good", "well"},
+            {"The flock of sheep walked ___ towards the green pasture.","slow", "slowly","slowly"},
+            {"The __ movement of the traffic annoyed the motorist.","slowly", "slow", "slow"},
+            {"I had a __ experience with online shopping.","badly", "bad", "bad"},
+            {"After a tiring week-long practice, the athletes __ need some rest and relaxation.", "bad", "badly", "badly"},
+            {"It is my daily habit to eat fruits in the morning.","ADJ", "ADV", "ADJ"},
+            {"Tanya prays daily at the school chapel.","ADJ", "ADV", "ADV"},
+            {"Marian is a fast learner.","ADJ", "ADV","ADJ"},
+            {"She learns her lesson fast because she reviews her notes.","ADJ", "ADV","ADV"},
+            {"Troy was happy to receive an early birthday gift from his mother.", "ADJ", "ADV","ADJ"},
+            {"The package arrived early yesterday.","ADJ", "ADV","ADV"},
+            {"Your late project will be given a deduction.","ADJ", "ADV","ADJ"},
+            {"The manager arrived late at the meeting.","ADJ", "ADV","ADV"},
+            {"The HARD soil will be cultivated for planting.","ADJ", "ADV","ADJ"},
+            {"Athletes should play HARD and fair.", "ADJ", "ADV","ADV"},
+            {"It is very NICE outside today.","ADJ", "ADV","ADJ"},
+            {"Your new bag looks NICE.","ADJ", "ADV","ADJ"},
+            {"She played BEAUTIFULLY.","ADJ", "ADV","ADJ"},
+            {"The train was very FAST.","ADJ", "ADV","ADJ"},
+            {"The turtle WALKED slow across the road.", "ADJ", "ADV","ADV"},
+            {"My FIRST teacher was my mother.","L", "D", "L"},
+            {"Have you seen the movie about the PHILIPPINE revolution during the time of Jose Rizal?","L", "D", "D"},
+            {"Many GREAT athletes started with the small beginnings.","L", "D", "L"},
+            {"SEVERAL Filipino heroes came from the CALABARZON Region.","L", "D", "L"},
+            {"The youth in THIS generation should know the true meaning of heroism.", "L", "D", "L"}
+
+    };
+
+    public String getEx5Questions(int a){
+        String question = EnglishE5Questions[a][0];
+        return question;
+    }
+
+    public String getEx5Choice1(int a){
+        String choice1 = EnglishE5Questions[a][1];
+        return choice1;
+    }
+
+    public String getEx5Choice2(int a){
+        String choice2 = EnglishE5Questions[a][2];
+        return choice2;
+    }
+
+    public String getEx5Answer(int a){
+        String answer = EnglishE5Questions[a][3];
+        return answer;
+    }
 }
+

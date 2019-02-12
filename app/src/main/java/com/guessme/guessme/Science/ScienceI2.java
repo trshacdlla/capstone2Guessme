@@ -224,8 +224,8 @@ public class ScienceI2 extends AppCompatActivity {
     public void dialog(){
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceI2.this);
 
-        alertDialog.setTitle("Direction:");
-        alertDialog.setMessage("Choose the correct answer.");
+        alertDialog.setTitle("Learning Objective");
+        alertDialog.setMessage("This level will practice you more on classifying state of matter.");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

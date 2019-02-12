@@ -101,7 +101,7 @@ public class Name extends AppCompatActivity{
                         .setCancelable(false)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Agreement.bgmusic.stop();
+                                Agreement.mix.stop();
                                 finish();
                                 System.exit(0);
                             }

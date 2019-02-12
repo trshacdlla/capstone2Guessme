@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Math3 extends AppCompatActivity {
+public class  Math3 extends AppCompatActivity {
 
     private MathQuestions m3Questions = new MathQuestions();
     private ArrayList<Integer> randomlist = new ArrayList<>();

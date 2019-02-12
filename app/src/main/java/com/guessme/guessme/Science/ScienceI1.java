@@ -227,7 +227,7 @@ public class ScienceI1 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceI1.this);
 
         alertDialog.setTitle("CONGRATULATIONS YOU ARE IN INTERMEDIATE!");
-        alertDialog.setMessage("Direction: Choose the correct answer");
+        alertDialog.setMessage("Hi, in this level, you can classify the different state of matter.");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

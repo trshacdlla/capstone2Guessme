@@ -27,8 +27,15 @@
         <TextView
             android:id="@+id/ET5Congrats"
             android:layout_width="match_parent"
+
+            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:text="Congratulation!!!"
+            android:text="Congratulations!!"
+            android:shadowColor="#1d6dcf"
+            android:shadowDx="4.0"
+            android:shadowDy="4.0"
+            android:shadowRadius="50"
+            android:textColor="#3d98ff"
             android:textAlignment="center"
             android:textSize="30dp" />
 

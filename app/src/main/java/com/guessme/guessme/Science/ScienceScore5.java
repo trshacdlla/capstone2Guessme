@@ -170,7 +170,7 @@ public class ScienceScore5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                Agreement.bgmusic.start();
+//                Agreement.mix.start();
                 startActivity(i);
                 finish();
 
@@ -198,7 +198,7 @@ public class ScienceScore5 extends AppCompatActivity {
                         }else{
                         }
                         Intent i = new Intent(getApplicationContext(),ScienceI1.class);
-                        Agreement.bgmusic.start();
+//                        Agreement.mix.start();
                         startActivity(i);
                         finish();
                     }else {

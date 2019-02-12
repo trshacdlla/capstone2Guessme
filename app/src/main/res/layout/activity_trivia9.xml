@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="   Human teeth are just as strong as shark teeth."
-        android:textColor="#000"
-        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="29dp"
 
         />
 

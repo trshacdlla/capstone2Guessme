@@ -49,13 +49,13 @@ public class Summary extends AppCompatActivity {
 
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Agreement.bgmusic.stop();
+                    Agreement.mix.stop();
                     finish();
                     System.exit(0);
                 }
             })
 
-                    .setMessage("The terms of this agreement (\\\"Terms of Use\\\") govern the relationship between you and GuessMe, regarding your use of GuessMe games, websites and related services (the \\\"Service\\\"), including all information, text, graphics, software, and services, available for your use. By using this application and the services offered on it, downloading any software, or browsing the website, as well as by downloading any of our mobile games from app stores, you accept the following Terms of Use. If you do NOT agree to all these Terms of Use, please do NOT use this website and/or download any of our games. \n" +
+                    .setMessage("The terms of this agreement (EULA) (\\\"Terms of Use\\\") govern the relationship between you and GuessMe, regarding your use of GuessMe games, websites and related services (the \\\"Service\\\"), including all information, text, graphics, software, and services, available for your use. By using this application and the services offered on it, downloading any software, or browsing the website, as well as by downloading any of our mobile games from app stores, you accept the following Terms of Use. If you do NOT agree to all these Terms of Use, please do NOT use this website and/or download any of our games. \n" +
                             "GuessMe is authorized to amend the Terms of Use at any time, with the amended Terms of Use effective as soon as they are posted on this website. Please check the most current Terms of Use to ensure that you are aware of all the terms and conditions regulating your use of this website and our game.\n" +
                             "YOU AGREE THAT YOUR USE OF THE INFORMATION, CONTENT, OR SERVICES ACKNOWLEDGES THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS. \n" +
                             "If you have any questions or comments, please contact us at support@ GuessMe.com..")

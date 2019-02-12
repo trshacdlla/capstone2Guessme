@@ -44,13 +44,14 @@ public class ScienceB5 extends AppCompatActivity {
     private Dialog dialog;
 
     private Vibrator vibe;
-//    static MediaPlayer bgmusic;
+//    static MediaPlayer quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_science_b5);
-
+//        quiz = MediaPlayer.create(ScienceB5.this, R.raw.quiz);
+//        quiz.start();
         init();
         dialog();
         nextQuestion();
@@ -227,7 +228,7 @@ public class ScienceB5 extends AppCompatActivity {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceB5.this);
 
         alertDialog.setTitle("Direction:");
-        alertDialog.setMessage("Choose the correct answer");
+        alertDialog.setMessage("You can Identify th solid, liquid and gas by the end of this level.");
         alertDialog.setCancelable(false);
         // Setting Dialog Message
 

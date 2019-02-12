@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="A shrimp's heart is in its head"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/Trivia2Back"

@@ -85,7 +85,7 @@ public class ScienceDifficulty extends AppCompatActivity {
                 if (b == " "){
                     Toast.makeText(getApplicationContext(), "Finish the Intermediate mode first.", Toast.LENGTH_SHORT).show();
                 }else{
-                    i = new Intent(getApplicationContext(), Science1.class);
+                    i = new Intent(getApplicationContext(), ScienceEx1.class);
                     startActivity(i);                }
             }
         });

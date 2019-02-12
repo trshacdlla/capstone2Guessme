@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.guessme.guessme.English.English1;
 import com.guessme.guessme.English.Englishact;
 import com.guessme.guessme.Math.Matchact;
 import com.guessme.guessme.Math.MathDifficulty;
@@ -29,6 +30,7 @@ import com.guessme.guessme.Trivia.Trivia7;
 import com.guessme.guessme.Trivia.Trivia8;
 import com.guessme.guessme.Trivia.Trivia9;
 
+import java.io.IOException;
 
 
 public class MainActivity extends AppCompatActivity{
@@ -37,18 +39,33 @@ public class MainActivity extends AppCompatActivity{
     Button math,engl,science,comp;
     ImageView one,two,three,four,five,six,seven,eight,nine,ten;
     TextView text;
-
+    static MediaPlayer quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        error = MediaPlayer.create(MainActivity.this, R.raw.error);
-        correct = MediaPlayer.create(MainActivity.this, R.raw.correct);
+//        if (quiz==null)
+//            quiz=MediaPlayer.create(MainActivity.this,R.raw.quiz);
+//
+//        if (!quiz.isPlaying())
+//            quiz.start();
+//            quiz.setLooping(true);
+//        error = MediaPlayer.create(MainActivity.this, R.raw.error);
+//        correct = MediaPlayer.create(MainActivity.this, R.raw.correct);
         init();
         buttons();
         imageClicked();
+//        stopplayers();
     }
 
+//    public void stopplayers(){
+//        if (quiz.isPlaying()){
+//
+//            quiz.stop();
+//        }
+//
+//
+//    }
     private void init(){
         math = (Button) findViewById(R.id.Mathbtn);
         engl = (Button) findViewById(R.id.Engbtn);
@@ -90,7 +107,7 @@ public class MainActivity extends AppCompatActivity{
         math.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Agreement.bgmusic.stop();
+//                Agreement.bgmusic.stop();
                 Intent i = new Intent(getApplicationContext(), Matchact.class);
                 i.putExtra("subject","Math");
                 startActivity(i);
@@ -101,7 +118,7 @@ public class MainActivity extends AppCompatActivity{
         engl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Agreement.bgmusic.stop();
+//                Agreement.bgmusic.stop();
                 Intent i = new Intent(getApplicationContext(),Englishact.class);
                 i.putExtra("subject","Engl");
                 startActivity(i);
@@ -112,7 +129,7 @@ public class MainActivity extends AppCompatActivity{
         science.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Agreement.bgmusic.stop();
+//                Agreement.bgmusic.stop();
                 Intent i = new Intent(getApplicationContext(),Scienceact.class);
                 startActivity(i);
                 MainActivity.this.finish();
@@ -122,7 +139,7 @@ public class MainActivity extends AppCompatActivity{
         comp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Agreement.bgmusic.stop();
+//                Agreement.bgmusic.stop();
                 Intent i = new Intent(getApplicationContext(), Techact.class);
                 i.putExtra("subject","Tech");
                 startActivity(i);
@@ -219,6 +236,8 @@ public class MainActivity extends AppCompatActivity{
         Intent i = new Intent(getApplicationContext(), MainMenu.class);
         startActivity(i);
         MainActivity.this.finish();
+//        quiz.stop();
+
     }
 
 }
